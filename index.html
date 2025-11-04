@@ -7,21 +7,27 @@
     <title>JL Porfolio</title>
 </head>
 <body>
+    <h1 id="Home"></h1>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1 class="site-title"> Joseph Lodico Porfolio Page</h1>
+        </div>
+        <div class="navbar-right">
+            <a href="#Home" class="Home-btn nav-btn"> Home</a>
+            <a href="#Contact" class="Contact-btn nav-btn">Contact</a>
+            <a href="Joseph Rogelio_CV_ANG.docx" download class="cv-btn nav-btn"> Download CV</a>
+            <a href="#aboutMe" class="AboutMe-btn nav-btn"> About Me</a>
+            <a href="MyProjects.html" class="MyProjects-btn nav-btn"> My Projects</a>
+        </div>
+    </nav>
+    <div class="navbar-spacer"></div>
+    
     <div class="title-container">
-    <h1> Joseph Lodico porfolio Page</h1>    
+        <h1> Joseph Lodico porfolio Page</h1>    
+        
     </div>
     
-    <hr class="top-hr" />
-    
-    <!-- Download CV Button, About Me Button -->
-<div class="button-row">
-    <a href="Joseph Rogelio_CV_ANG.docx" download class="cv-btn">Download CV</a>
-    <a href= "#aboutMe" class="AboutMe-btn"> About Me</a>
-    <a href="MyProjects.html" class="MyProjects-btn"> MyProjects</a>
-
-     
-</div>
-
+    <hr class="top-hr"/>
     <!-- hr above the centered profile card -->
     <div class="profile-card centered">
         <img src="JosephVacation.jpg" alt="profile" class="profile-pic">
@@ -67,8 +73,8 @@
 
 <hr class="section-divider">
     <!-- the Snapchat-avatar Section -->
-     <h1 id="aboutMe">ABOUT ME</h1>
- <div class="avatar-section">
+    <h1 id="aboutMe">ABOUT ME</h1>
+    <div class="avatar-section">
     <div class="snapchat-avatar">
         <img src="SnapAvatar.webp" alt="Snapchat Avatar">
     </div>
@@ -79,8 +85,22 @@
             </p>    
         </div>
     </div>
+    <!-- here is my Contact Section -->
+    <hr class="section-divider">
+    <section id="contact" class="contact-section">
+    <h1 id="Contact">Contact</h1>
+    <p> Please fill out the form below to get in Contact with me</p>
 
-    
+    <form class="contact-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Name" Required>
+        <input type="email" name="email" placeholder="Email" Required>
+        <textarea name="message" rows="5" placeholder="Message" Required></textarea>
+        <button type="submit" class="sendMessage-btn"> Send Message</button>
+    </form>
+</section>
+
+
+
     <!-- Social Links Section -->
     <div class="social-container">
         <a href="https://www.linkedin.com/in/joseph-lodico-/" target="_blank" class="social-box linkedin">
@@ -95,5 +115,6 @@
             <img src="itchLogo.png" alt="Itch.io Logo">
         </a>
     </div>  
+    <script src="index.js"></script>
 </body>
 </html>
