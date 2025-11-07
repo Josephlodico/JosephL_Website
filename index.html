@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>JL Porfolio</title>
-</head>
-<body>
-    <h1 id="Home"></h1>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <h1 class="site-title"> Joseph Lodico Porfolio Page</h1>
-        </div>
-        <div class="navbar-right">
-            <a href="#Home" class="Home-btn nav-btn"> Home</a>
-            <a href="#Contact" class="Contact-btn nav-btn">Contact</a>
-            <a href="Joseph Rogelio_CV_ANG.docx" download class="cv-btn nav-btn"> Download CV</a>
-            <a href="#aboutMe" class="AboutMe-btn nav-btn"> About Me</a>
-            <a href="MyProjects.html" class="MyProjects-btn nav-btn"> My Projects</a>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>JL Porfolio</title>
+    </head>
+    <body>
+        <h1 id="Home"></h1>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h1 class="site-title"> Joseph Lodico Porfolio Page</h1>
+            </div>
+            <div class="navbar-right">
+                <a href="#Home" class="Home-btn nav-btn"> Home</a>
+                <a href="#Contact" class="Contact-btn nav-btn">Contact</a>
+                <a href="Joseph Rogelio_CV_ANG.docx" download class="cv-btn nav-btn"> Download CV</a>
+                <a href="#aboutMe" class="AboutMe-btn nav-btn"> About Me</a>
+                <a href="MyProjects.html" class="MyProjects-btn nav-btn"> My Projects</a>
+            </div>
+            
+            <!-- Social Links Section -->
+            <div class="navbar-socials">
+                
+                <a href="https://github.com/Josephlodico" target="_blank" class="social-box github">
+                    <img src="GithubLogo.png" alt="Github Logo">
+                </a>
+                
+                <a href="https://josephlodico.itch.io/" target="_blank" class="social-box itchio">
+                    <img src="itchLogo.png" alt="Itch.io Logo">
+                </a>
+                
+                <a href="https://www.linkedin.com/in/joseph-lodico-/" target="_blank" class="social-box linkedin">
+                    <img src="LinkedInLogo.png" alt="LinkedIn Logo">
+                </a>
+            </div>  
+        </nav>
     <div class="navbar-spacer"></div>
     
     <div class="title-container">
@@ -33,9 +49,26 @@
         <img src="JosephVacation.jpg" alt="profile" class="profile-pic">
         <div class="profile-name">Joseph Lodico</div>
     </div>
-<!-- the Experience Section -->
+    <hr class="section-divider">
+        <!-- the Snapchat-avatar Section -->
+        <h1 id="aboutMe">ABOUT ME</h1>
+        <div class="avatar-section">
+        <div class="snapchat-avatar">
+            <img src="SnapAvatar.webp" alt="Snapchat Avatar">
+        </div>
+            <div class="about-text">
+                <h2>What is there to know about me</h2>
+                <p> Hello! I'm joseph Lodico, I am In Game Dev learning How to make games at LaSalle College,
+                    I love playing video games and find it interesting that i am making it my passion now
+                </p>    
+            </div>
+        </div>
+    <hr class="section-divider">
+    <!-- the Experience Section -->
     <div class="experience-section">
+        <h1> My Experience</h1>
         <div class="experience-columns">
+            
         <!-- Column #1 -->
          <div class="experience-category">
         <h1> My Coding Experience</h1>
@@ -71,20 +104,6 @@
     </div>
 </div>
 
-<hr class="section-divider">
-    <!-- the Snapchat-avatar Section -->
-    <h1 id="aboutMe">ABOUT ME</h1>
-    <div class="avatar-section">
-    <div class="snapchat-avatar">
-        <img src="SnapAvatar.webp" alt="Snapchat Avatar">
-    </div>
-        <div class="about-text">
-            <h2>What is there to know about me</h2>
-            <p> Hello! I'm joseph Lodico, I am In Game Dev learning How to make games at LaSalle College,
-                I love playing video games and find it interesting that i am making it my passion now
-            </p>    
-        </div>
-    </div>
     <!-- here is my Contact Section -->
     <hr class="section-divider">
     <section id="contact" class="contact-section">
@@ -98,23 +117,6 @@
         <button type="submit" class="sendMessage-btn"> Send Message</button>
     </form>
 </section>
-
-
-
-    <!-- Social Links Section -->
-    <div class="social-container">
-        <a href="https://www.linkedin.com/in/joseph-lodico-/" target="_blank" class="social-box linkedin">
-            <img src="LinkedInLogo.png" alt="LinkedIn Logo">
-        </a>
-        
-        <a href="https://github.com/Josephlodico" target="_blank" class="social-box github">
-            <img src="GithubLogo.png" alt="Github Logo">
-        </a>
-        
-        <a href="https://josephlodico.itch.io/" target="_blank" class="social-box itchio">
-            <img src="itchLogo.png" alt="Itch.io Logo">
-        </a>
-    </div>  
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
