@@ -108,6 +108,41 @@
         transform: translateY(-5px);
         box-shadow: 0 6px 15px yellow;
     }
+
+    .SRitch-btn{
+    
+        padding: 10px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: yellow;
+        transition: 0.3 ease;
+        text-shadow: 2px 2px 2px purple;
+    }
+    .SRitch-btn:hover{
+        background: purple;
+        color: yellow;
+        transform: scale(1.05);
+        text-shadow: 2px 2px 2px purple;
+    }
+    .SRmoreinfo-btn{
+        padding: 10px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: purple;
+        border: 2px solid purple;
+        transition: 0.3 ease;
+        text-shadow: 2px 2px 2px yellow;
+        margin-left: 70px;
+    }
+    
+    .SRmoreinfo-btn:hover{
+        background: purple;
+        color: yellow;
+        transform: scale(1.05);
+        text-shadow: 1px 1px 1px purple;
+    }
     /* -------------------------------------MYGLIDINGSIM-LOGO----------------------------------------- */
 
 /* MyGlidingSim Card */
@@ -171,6 +206,24 @@
         color:  grey;
         transform: scale(1.05);
         text-shadow: 2px 2px 2px grey;
+    }
+    .MGSmoreinfo-btn{
+        padding: 10px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: grey;
+        border: 2px solid grey;
+        transition: 0.3 ease;
+        text-shadow: 2px 2px 2px white;
+        margin-left: 70px;
+    }
+    
+    .MGSmoreinfo-btn:hover{
+        background: white;
+        color: grey;
+        transform: scale(1.05);
+        text-shadow: 1px 1px 1px grey;
     }
  /* -------------------------------------InfiniteTrigger-LOGO----------------------------------------- */
 
@@ -240,22 +293,25 @@
         transform: scale(1.05);
         text-shadow: 1px 1px 1px rgb(45, 78, 52);
     }
-    /* -------------------------------------GameLogo Container-------------------------------------------- */
-    
-    
-    .SRitch-btn{
 
+    .IFTGmoreinfo-btn{
         padding: 10px 25px;
         border-radius: 10px;
         text-decoration: none;
         font-weight: bold;
-        color: yellow;
+        color: black;
+        border: 2px solid black;
         transition: 0.3 ease;
-        text-shadow: 2px 2px 2px purple;
+        text-shadow: 2px 2px 2px black;
+        margin-left: 70px;
     }
-    .SRitch-btn:hover{
-        background: purple;
-        color: yellow;
+    
+    .IFTGmoreinfo-btn:hover{
+        background: black;
+        color: rgb(45, 78, 52);;
         transform: scale(1.05);
-        text-shadow: 2px 2px 2px purple;
+        text-shadow: 1px 1px 1px rgb(45, 78, 52);
     }
+    /* -------------------------------------GameLogo Container-------------------------------------------- */
+    
+    

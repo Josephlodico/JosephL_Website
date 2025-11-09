@@ -1,0 +1,54 @@
+.arrow-btn:hover {
+        background: silver;
+        transform: translateX(-5px);
+    }
+    span{
+        color: black;
+        font-weight: bold;
+    }
+    
+    body{
+        background: grey;
+        background-size: cover;
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 100vh;
+        margin: 0;
+        padding-top: 30px;
+        
+    }
+    h1,h2{
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 2px white;
+    }
+    
+    .arrow-btn-left{
+        position: fixed;
+        top:20px;
+        left: 25px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3 ease, transform 0.2 ease;
+        text-shadow: 1px 1px 1px white;
+        
+    }
+    .arrow-btn-left:hover{
+        background: rgba(255, 255, 255, 0.711);
+        transform: translateX(-5px);
+    }
+    .flipped {
+        display: inline-block;
+        transform: scaleX(-1);
+    }
+
+    .arrow-btn-left span{
+        color: white;
+        font-weight: bold;  
+    }
+    /* --------------------------------------Main Page Style--------------------------------------------------------- */
