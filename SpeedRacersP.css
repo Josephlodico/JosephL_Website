@@ -1,3 +1,5 @@
+/* --------------------------------------Main Page Style--------------------------------------------------------- */
+
 .arrow-btn:hover {
         background: silver;
         transform: translateX(-5px);
@@ -8,14 +10,11 @@
     }
     
     body{
-       background: purple;
+        background: purple;
         background-size: cover;
-        display: flex;
-        align-items: center; 
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100vh;
+        display: block;
         margin: 0;
+        min-height: 100vh;
         padding-top: 30px;
         
     }
@@ -35,8 +34,7 @@
         font-weight: bold;
         text-decoration: none;
         transition: color 0.3 ease, transform 0.2 ease;
-        text-shadow: 1px 1px 1px yellow;
-        
+        text-shadow: 1px 1px 1px yellow; 
     }
     .arrow-btn-left:hover{
         background: rgba(255, 255, 255, 0.711);
@@ -50,6 +48,42 @@
     .arrow-btn-left span{
         color: yellow;
         font-weight: bold;
-         text-shadow: 1px 1px 1px purple;
+        text-shadow: 1px 1px 1px purple;
     }
-    /* --------------------------------------Main Page Style--------------------------------------------------------- */
+    /* --------------------------------------Info Section Style and layout--------------------------------------------------------- */
+.info-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    max-width: 1490px;
+    margin-left: -400px;
+    padding: 40px 410px;
+}
+.game-image{
+    width: 850px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px black;
+}
+.Game-description{
+    flex: 1;
+    margin-bottom: 100px;
+    color: yellow;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px purple;
+}
+
+.Game-description h2{
+    color: yellow;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px purple;
+    font-size: 28px;
+}
+    

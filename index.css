@@ -175,7 +175,7 @@ body{
     gap: 20px;
 }
 .experience-box{
-    background: lienear-gradient(135deg,#c4baff,#a084dc);
+    background: linear-gradient(135deg,#444349,#1e0f3f);
     color: white;
     font-weight: bold;
     padding: 10px 18px;
@@ -236,7 +236,7 @@ body{
     .navbar {
         position: fixed;
         top: 0;  left: 0;  width: 100%;  height: 80px;
-        background-color: rgb(138, 121, 146);
+        background: linear-gradient(135deg, #1d448b, #1d034d);
         box-shadow: 0 4px 10px rgba(0,0,0,0.6);
         display: flex;
         justify-content: space-between;
