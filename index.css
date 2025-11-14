@@ -1,70 +1,36 @@
 body{
-        background-image: url("BlackBG.jpg");
-        background-size: cover;
-        align-items: center; 
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100vh;
-        margin: 0;
-        padding-top: 30px;
-        cursor: pointer; 
-        
-    }
-    h1{
-        color: white;
-        text-align: center;
-        text-shadow: 1px 1px 1px black;
-    }
-    p{
-        color: white;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-    }
-    /* JL Main Profile Card */
+    background-image: url("BlackBG.jpg");
+    background-size: cover;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 30px;
+    cursor: pointer; 
     
+}
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
 
-    .centered { margin-left: auto; margin-right: auto; text-align: center; }
+/* HTML Scroll functionality */
+html{
+    scroll-behavior: smooth;
+}
 
-    img.profile-pic{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid black;
-        margin-bottom: 10px;
-    }
-    .profile-name{
-        font-size: 30px;
-        font-weight: bold;
-        margin: 5px 0;
-        color: white;
-        text-shadow: 1px 1px 1px white;
-    }
-    hr { border: none; height:1px; background:#e0e0e0; margin: 12px 0; }
-    
-    .profile-pic:hover {
-        transform: scale(1.25);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-/* ----------------------------------------------------------------------------- */
-    /* Style for logos (social-container/social-box*/
-    .social-box img {
-        width: 60px;
-        height: auto;
-        transition: transform 0.2 ease;
-    }
-    .social-box:hover img{
-        transform: scale(1.1); /* small zoom on hover */
-    }
-    .social-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-    /* ------------------------------------------------------------------------ */
+.section-divider, .top-hr{
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, black, #a32f94, #d8243f);
+    margin: 60px auto 40px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+/* ------------------------------------------------------------------------------------------- */
  
     /* Arrow Button */
     .arrow-btn {
@@ -84,7 +50,7 @@ body{
         transform: translateX(5px);
     }
 
-    /* Header section for title + download link */
+/* Header section for title + download link */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -101,26 +67,8 @@ body{
     margin: 0;
 }
 
-/* CV download link */
-.cv-download {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-}
-
-.cv-download a {
-    margin-left: 8px;
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cv-download a:hover {
-    text-decoration: underline;
-}
-
 /* button styling Section for example: the about me button */
-.cv-btn,.AboutMe-btn,.MyProjects-btn,.Home-btn,.Contact-btn{ 
+.cv-btn,.AboutMe-btn,.MyExperience-btn,.MyProjects-btn,.Home-btn,.Contact-btn{ 
     color: white;
     padding: 12px 26px;
     border-radius: 10px;
@@ -131,19 +79,161 @@ body{
     text-shadow: 1px 1px 1px white;
 }
 
-.cv-btn:hover,.AboutMe-btn:hover,.MyProjects-btn:hover,
-.Home-btn:hover,.Contact-btn:hover{
+.cv-btn:hover,.AboutMe-btn:hover,.MyExperience-btn:hover,.MyProjects-btn:hover,.Home-btn:hover,.Contact-btn:hover{
     transform: translateY(-3px);
 }
-/* gets both Download CV and About Me Btn */
-.button-row {
-    width: 100%;
+
+/* -------------------------Navigation Bar Styling for main Page------------------------------- */
+
+.navbar {
+    position: fixed;
+    top: 0;  left: 0;  width: 100%;  height: 80px;
+    background: linear-gradient(135deg, #1d448b, #1d034d);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1000; /* ensures navbar stays on top of everything */
+}
+.navbar-socials{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-socials img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.navbar-socials img:hover {
+    transform: scale(1.3);
+}
+
+/* bNavbar title */
+.site-title{
+    grid-column: 2;
+    justify-self: left;
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Navbar right-side buttons */
+.navbar-right {
+    justify-self: end;
     display: flex;
     gap: 20px;
-    align-items: center; /* centers both buttons*/
-    justify-content: center;
-    margin-bottom: 10px;   
 }
+
+.navbar-btn{
+    background: none;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition: background 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover effect */
+.nav-btn:hover{
+    background: rgb(38, 1, 46);
+    transform: scale(1.05);
+}
+
+.navbar-spacer {
+    height: 80px; /* same height as navbar to prevent content overlap */
+}
+
+.active-page {
+    background: rgb(38, 1, 46);
+    color: black;
+}
+@media (max-width: 1100px) {
+    .nav-btn { padding: 8px 14px; font-size: 14px; }
+    .navbar { padding: 0 16px; }
+    .navbar-right { gap: 12px; }
+}
+p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+/* -----------------------------------JL Main Profile Card / Home -------------------------------------------*/
+/* Bio Text */
+.home-bio{
+    max-width: 800px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black;
+}
+.profile-card{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 60px;
+    margin: 50px auto;
+}
+
+/* Profile Picture */
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid black;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
+
+/* Hover effect */
+.profile-pic:hover {
+    transform: scale(1.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-name{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 120px;
+}
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------Style For ABOUT ME Section--------------------------------------------- */
+.snapchat-avatar,.about-text{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .snapchat-avatar img{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+
+    }
+
+    .about-text{
+        text-align: left;
+        color: white;
+        max-width: 1300px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+/* ----------------------------Style For About ME Section--------------------------------------------- */
+    
 /* -------------------------------Experience Section (little boxes)---------------------------------------------- */
 
 .experience-section{
@@ -192,124 +282,8 @@ body{
     box-shadow: 0 14px 20px rgba(0,0,0,1);
 }
 /* ---------------------------------Experience Section (little boxes)------------------------------------ */
-/* ----------------------------Style For ABOUT ME Section--------------------------------------------- */
-.snapchat-avatar,.about-text{
-        display: inline-block;
-        vertical-align: middle;
-    }
 
-    .snapchat-avatar img{
-        width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 30px;
-
-    }
-
-    .about-text{
-        text-align: left;
-        color: white;
-        max-width: 800px;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.5;
-    }
-/* ----------------------------Style For About ME Section--------------------------------------------- */
-    /* HTML Scroll functionality */
-    html{
-        scroll-behavior: smooth;
-    }
-
-    .section-divider, .top-hr{
-        width: 100%;
-        height: 3px;
-        border: none;
-        border-radius: 5px;
-        background: linear-gradient(90deg, black, #a32f94, #d8243f);
-        margin: 60px auto 40px auto;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
-
-    /* -------------------------Navigation Bar Styling for main Page------------------------------- */
-
-    .navbar {
-        position: fixed;
-        top: 0;  left: 0;  width: 100%;  height: 80px;
-        background: linear-gradient(135deg, #1d448b, #1d034d);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 40px;
-        box-sizing: border-box;
-        z-index: 1000; /* ensures navbar stays on top of everything */
-    }
-    .navbar-socials{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .navbar-socials img{
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        transition: transform 0.3s ease;
-    }
-    .navbar-socials img:hover {
-    transform: scale(1.3);
-}
-
-    /* bNavbar title */
-    .site-title{
-        grid-column: 2;
-        justify-self: left;
-        margin: 0;
-        color: white;
-        font-size: 22px;
-        font-weight: bold;
-        text-shadow: 2px 2px 2px black;
-    }
-
-    /* Navbar right-side buttons */
-    .navbar-right {
-        justify-self: end;
-        display: flex;
-        gap: 20px;
-    }
-
-    .navbar-btn{
-        background: none;
-        border: none;
-        padding: 10px 18px;
-        border-radius: 10px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        transition: background 0.5s ease, transform 0.5s ease;
-    }
-
-    /* Hover effect */
-    .nav-btn:hover{
-        background: rgb(38, 1, 46);
-        transform: scale(1.05);
-    }
-
-    .navbar-spacer {
-        height: 80px; /* same height as navbar to prevent content overlap */
-    }
-
-    .active-page {
-        background: rgb(38, 1, 46);
-        color: black;
-    }
-    @media (max-width: 1100px) {
-        .nav-btn { padding: 8px 14px; font-size: 14px; }
-        .navbar { padding: 0 16px; }
-        .navbar-right { gap: 12px; }
-    }
-
-    /* ---------------------------------Contact Section------------------------ */
+/* -----------------------------------------Contact Section---------------------------------------------- */
     .contact-section{
         text-align: center;
         padding: 60px 20px;
@@ -367,7 +341,7 @@ body{
     /* this is for send Message */
 
     .sendMessage-btn{
-        background: linear-gradient(135deg, #0f0f0f, #3b1a37);
+        background: linear-gradient(135deg,#444349,#1e0f3f);
         color: white;
         font-weight: bold;
         border: none;
