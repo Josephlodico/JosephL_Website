@@ -106,4 +106,30 @@
     text-shadow: 1px 1px 2px purple;
     font-size: 30px;
 }
+/* ----------------------------------SpeedRacers StartMenu World Section------------------------------- */
+.SRStartMenu-description{
+    flex: 1;
+    margin-bottom: 350px;
+    color: yellow;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px purple;
+}
+
+.SRStartMenu-description h2{
+    color: yellow;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px purple;
+    font-size: 30px;
+}
+.SRStartMenu-image{
+    width: 900px;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
     
