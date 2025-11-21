@@ -73,6 +73,13 @@
         color: white;
         font-weight: bold;  
     }
+    .video-image{
+    width: 950px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px silver;
+}
     /* --------------------------------------MyGlidingSym Info Section Style--------------------------------------------------------- */
 .info-section{
     display: flex;
@@ -81,12 +88,12 @@
     text-align: left;
     gap: 40px;
     width: 100%;
-    max-width: 1490px;
-    margin-left: 0px;
+    max-width: 1800px;
+    margin-left: -100px;
     padding: 0 auto;
 }
 .game-image{
-    width: 850px;
+    width: 950px;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
@@ -104,10 +111,10 @@
 .GSGame-description h2{
     color: white;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px silver;
-    font-size: 28px;
+    font-size: 30px;
 }
  /* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
 .GSlevel-section{
@@ -116,7 +123,7 @@
     gap: 30px;
     width: 100%;
     max-width: 1800px;
-    margin-left: 0px;
+    margin-left: 90px;
     padding: 0 auto;
 }
 .Level-image{
@@ -128,7 +135,7 @@
 }
 .GSlevel-description{
     flex: 1;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     color: white;
     font-size: 24px;
     line-height: 1.5;
