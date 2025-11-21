@@ -335,4 +335,93 @@
     }
     /* -------------------------------------GameLogo Container-------------------------------------------- */
     
+    /* -------------------------------------GUNGAME-LOGO----------------------------------------- */
+
+/* GUNGAME Card */
+    .GunGamelogo-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 4px solid rgb(58, 57, 57);
+        background: rgb(30, 31, 30);
+        border-radius: 20px;
+        padding: 25px;
+        width: 500px;
+        height: 750px;
+        max-width: 1000px;
+        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
     
+    /* my Game logo Image */
+    .GunGamelogo{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+    /* GunGame Description Text */
+    .GunGamelogo-text{
+        text-align: left;
+        margin-bottom: 50px;
+        color: white;
+        max-width: 600px;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        line-height: 1.5;
+    }
+    .GunGamelogo-text h2{
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 2px black;
+    }
+.GunGamelogo-card:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgb(44, 44, 44);
+    }
+
+    /* GunGame Github btn design */
+    .GunGame-btn{
+
+        padding: 10px 25px;
+        border-radius: 10px;
+        text-decoration:  none;
+        font-weight: bold;
+        color: white;
+        border:2px solid white;
+        transition: 0.3 ease;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .GunGame-btn:hover{
+        background: rgb(119, 118, 118);
+        color: white(45, 78, 52);
+        border-radius: 10px;
+        border:2px solid white;
+        transform: scale(1.05);
+        text-shadow: 1px 1px 1px rgb(45, 78, 52);
+    }
+
+    .GunGamemoreinfo-btn{
+        padding: 10px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        border: 2px solid white;
+        transition: 0.3 ease;
+        text-shadow: 2px 2px 2px black;
+        margin-left: 70px;
+    }
+    
+    .GunGamemoreinfo-btn:hover{
+        background: rgb(119, 118, 118);
+        color: white;
+        transform: scale(1.05);
+        text-shadow: 1px 1px 1px rgb(45, 78, 52);
+    }
