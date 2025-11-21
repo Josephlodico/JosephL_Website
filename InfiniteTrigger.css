@@ -86,13 +86,13 @@ h1,h2 {
     text-align: left;
     gap: 40px;
     width: 100%;
-    max-width: 1490px;
+    max-width: 1800px;
     margin-left: 0px;
     padding: 0 auto;
 }
 
 .game-image {
-    width: 750px;
+    width: 850px;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
@@ -111,7 +111,7 @@ h1,h2 {
 .IFTG-description h2{
     color: black;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     font-size: 28px;
@@ -125,13 +125,12 @@ h1,h2 {
     text-align: left;
     gap: 40px;
     width: 100%;
-    max-width: 1490px;
+    max-width: 1800px;
     margin-left: 0px;
-    padding: 0 auto;
 }
 
 .GameSplash-image {
-    width: 750px;
+    width: 850px;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
@@ -150,7 +149,7 @@ h1,h2 {
 .IFTGSplash-description h2{
     color: black;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     font-size: 28px;
@@ -159,17 +158,19 @@ h1,h2 {
 .Gameplay-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    gap: 40px;
+    flex-direction: column;
+    text-align: center;
     width: 100%;
     max-width: 1490px;
     margin-left: 0px;
-    padding: 0 auto;
+    gap: 30px;
 }
-
+.Gameplay-images{
+    display: flex;
+    gap: 90px;
+}
 .Gameplay-image {
-    width: 750px;
+    width: 850px;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
@@ -187,7 +188,7 @@ h1,h2 {
 .IFTGGameplay-description h2{
     color: black;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     font-size: 28px;
