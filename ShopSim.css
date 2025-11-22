@@ -77,6 +77,21 @@ h1,h2 {
     font-weight: bold;
 }
 /* --------------------------------------SHopsimulator Info/Description Section-------------------------------------------------------- */
+.ShopSimUML-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid black;
+        background: rgb(73, 62, 45);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px black;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
 .info-section {
     display: flex;
     align-items: center;
@@ -90,7 +105,7 @@ h1,h2 {
 }
 
 .coding-image {
-    width: 800px;
+    width: 950px;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
@@ -115,6 +130,21 @@ h1,h2 {
     font-size: 28px;
 }
 /* ---------------------------------- ShopSimulator Video/ Description -----------------------*/
+.ShopSimVid-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid black;
+        background: rgb(73, 62, 45);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px black;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
 .Gameplay-images{
     display: flex;
 }
@@ -123,14 +153,14 @@ h1,h2 {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     gap: 40px;
     width: 100%;
     max-width: 1200px;
     margin-left: 5px;
 }
 .video-image{
-    width: 1620px;
+    width: 1700px;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
