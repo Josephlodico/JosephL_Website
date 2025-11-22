@@ -81,7 +81,22 @@
     box-shadow: 0 0 10px silver;
 }
     /* --------------------------------------MyGlidingSym Info Section Style--------------------------------------------------------- */
-.info-section{
+.MGSInfo-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid white;
+        background: rgb(54, 54, 54);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px white;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+    .info-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,7 +104,7 @@
     gap: 40px;
     width: 100%;
     max-width: 1800px;
-    margin-left: -100px;
+    margin-left: -20px;
     padding: 0 auto;
 }
 .game-image{
@@ -101,7 +116,7 @@
 }
 .GSGame-description{
     flex: 1;
-    margin-bottom: 300px;
+    margin-bottom: 220px;
     color: white;
     font-size: 24px;
     line-height: 1.5;
@@ -117,17 +132,33 @@
     font-size: 30px;
 }
  /* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
-.GSlevel-section{
+.MGSLvlDesign-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid white;
+        background: rgb(54, 54, 54);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px white;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+ .GSlevel-section{
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-top: 40px;
     width: 100%;
     max-width: 1800px;
-    margin-left: 90px;
+    margin-left: 0px;
     padding: 0 auto;
 }
 .Level-image{
-    width: 900px;
+    width: 950px;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
@@ -135,7 +166,7 @@
 }
 .GSlevel-description{
     flex: 1;
-    margin-bottom: 200px;
+    margin-bottom: 220px;
     color: white;
     font-size: 24px;
     line-height: 1.5;
