@@ -123,6 +123,7 @@ h1,h2 {
     align-items: center;
     justify-content: space-between;
     text-align: left;
+    margin-top: 20px;
     gap: 40px;
     width: 100%;
     max-width: 1800px;
@@ -160,6 +161,7 @@ h1,h2 {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
     width: 100%;
     max-width: 1490px;
     margin-left: 0px;
