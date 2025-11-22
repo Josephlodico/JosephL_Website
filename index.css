@@ -76,7 +76,7 @@ html{
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.25s ease;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .cv-btn:hover,.AboutMe-btn:hover,.MyExperience-btn:hover,.MyProjects-btn:hover,.Home-btn:hover,.Contact-btn:hover{

@@ -107,9 +107,28 @@
     font-size: 30px;
 }
 /* ----------------------------------SpeedRacers StartMenu World Section------------------------------- */
+.SRMenuWorld-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 2000px;
+    margin-left: 10px;
+}
+
+.SRStartMenu-image{
+    width: 900px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
 .SRStartMenu-description{
     flex: 1;
-    margin-bottom: 350px;
+    margin-bottom: 100px;
     color: yellow;
     font-size: 24px;
     line-height: 1.5;
@@ -123,13 +142,5 @@
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px purple;
     font-size: 30px;
-}
-.SRStartMenu-image{
-    width: 900px;
-    height: auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    border: 2px solid yellow;
-    box-shadow: 0 0 10px yellow;
 }
     
