@@ -88,7 +88,7 @@ html{
 .navbar {
     position: fixed;
     top: 0;  left: 0;  width: 100%;  height: 80px;
-    background: linear-gradient(135deg, #1d448b, #1d034d);
+    background: linear-gradient(135deg,#444349,#1e0f3f);
     box-shadow: 0 4px 10px rgba(0,0,0,0.6);
     display: flex;
     justify-content: space-between;
