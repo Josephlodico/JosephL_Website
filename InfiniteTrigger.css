@@ -81,7 +81,7 @@ h1,h2 {
     height: 3px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(90deg, black, #a32f94, #d8243f);
+    background: linear-gradient(90deg, rgb(52, 71, 51), #060706, #3f633b);
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
@@ -123,7 +123,7 @@ h1,h2 {
 
 .IFTG-description{
     flex: 1;
-    margin-bottom: 250px;
+    margin-bottom: 170px;
     color: black;
     font-size: 24px;
     line-height: 1.5;
@@ -177,7 +177,7 @@ h1,h2 {
 
 .IFTGSplash-description{
     flex: 1;
-    margin-bottom: 170px;
+    margin-bottom: 110px;
     color: black;
     font-size: 24px;
     line-height: 1.5;
@@ -217,7 +217,7 @@ h1,h2 {
 }
 .IFTGGameplay-description{
     flex: 1;
-    margin-bottom: 200px;
+    margin-bottom: 170px;
     color: black;
     font-size: 24px;
     line-height: 1.5;
