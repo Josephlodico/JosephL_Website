@@ -26,7 +26,7 @@ html{
     height: 3px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(90deg, black, #a32f94, #d8243f);
+    background: linear-gradient(135deg,#444349,#1e0f3f);;
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
@@ -68,7 +68,7 @@ html{
 }
 
 /* button styling Section for example: the about me button */
-.cv-btn,.AboutMe-btn,.MyExperience-btn,.MyProjects-btn,.Home-btn,.Contact-btn{ 
+.cv-btn,.Education-btn,.MyExperience-btn,.MyProjects-btn,.Home-btn,.Contact-btn{ 
     color: white;
     padding: 12px 26px;
     border-radius: 10px;
@@ -79,7 +79,7 @@ html{
     text-shadow: 2px 2px 2px black;
 }
 
-.cv-btn:hover,.AboutMe-btn:hover,.MyExperience-btn:hover,.MyProjects-btn:hover,.Home-btn:hover,.Contact-btn:hover{
+.cv-btn:hover,.Education-btn:hover,.MyExperience-btn:hover,.MyProjects-btn:hover,.Home-btn:hover,.Contact-btn:hover{
     transform: translateY(-3px);
 }
 
@@ -185,13 +185,13 @@ p{
 
 /* Profile Picture */
 .profile-pic{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height:300px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid black;
     margin-bottom: 10px;
-    margin-left: 200px;
+    margin-left: 250px;
 }
 
 /* Hover effect */
@@ -201,37 +201,40 @@ p{
 }
 
 .profile-name{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     margin-top: 20px;
-    color: white;
+    color: rgb(48, 189, 214);
     text-shadow: 1px 1px 1px black;
-    margin-left: 120px;
+    margin-left: 10px;
+}
+.profile-minibio{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(48, 189, 214);
+    text-shadow: 10px 10px 10px black;
+    margin-left: 10px;
+}
+.Bio-Section p{
+    margin-left: 10px;
+    font-size: 22px;
 }
 /* --------------------------------------------------------------------------------------------------- */
 /* ----------------------------Style For ABOUT ME Section--------------------------------------------- */
-.snapchat-avatar,.about-text{
-        display: inline-block;
-        vertical-align: middle;
+.snapchat-avatar{
+    display: flex;
+    margin-left: 500px;
     }
 
     .snapchat-avatar img{
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
         object-fit: cover;
         margin-right: 20px;
 
     }
 
-    .about-text{
-        text-align: left;
-        color: white;
-        max-width: 1400px;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.5;
-    }
 /* ----------------------------Style For About ME Section--------------------------------------------- */
     
 /* -------------------------------Experience Section (little boxes)---------------------------------------------- */
@@ -281,7 +284,87 @@ p{
     transform: translateY(-6px);
     box-shadow: 0 14px 20px rgba(0,0,0,1);
 }
-/* ---------------------------------Experience Section (little boxes)------------------------------------ */
+/* ---------------------------------Education Section--------------------------------------------- */
+/* Lasalle FlexBox Card */
+.Education-section{
+display: flex;
+}
+.Lasalle-card{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 4px solid grey;
+        background: rgb(41, 41, 40);
+        border-radius: 20px;
+        padding: 25px;
+        width: 420px;
+        height: auto;
+        max-width: 500px;
+        margin-left: 50px;
+        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+.Lasalle-card h1{
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+.Lasalle-card h4{
+    font-weight: bold;
+    font-size: auto;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+.Lasalle-card p{
+    align-items: left;
+    text-shadow: 10px 10px 10px black;
+    text-align: left;
+}
+
+.Lasalle-card:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* HighSchool FlexBox Card */
+.HighSchool-card{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 4px solid grey;
+        background: rgb(41, 41, 40);
+        border-radius: 20px;
+        padding: 25px;
+        width: 440px;
+        height: auto;
+        max-width: 500px;
+        margin-left: 50px;
+        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+.HighSchool-card h1{
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+.HighSchool-card h4{
+    font-weight: bold;
+    font-size: auto;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+.HighSchool-card p{
+    align-items: left;
+    text-shadow: 10px 10px 10px black;
+    text-align: left;
+}
+
+.HighSchool-card:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 /* -----------------------------------------Contact Section---------------------------------------------- */
     .contact-section{
