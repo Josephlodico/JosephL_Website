@@ -1,25 +1,33 @@
 /* Navigation Bar for better Navigation of pages */
 .navbar {
     position: fixed;
-    top: 0;  left: 0;  width: 100%;  height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     background: linear-gradient(135deg, #5d2374, #36193a);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     box-sizing: border-box;
-    z-index: 1000; /* ensures navbar stays on top of everything */
+    z-index: 1000;
+    /* ensures navbar stays on top of everything */
 }
+
 .navbar-right {
     justify-self: end;
     display: flex;
     gap: 20px;
 }
+
 .navbar-spacer {
-    height: 80px; /* same height as navbar to prevent content overlap */
+    height: 80px;
+    /* same height as navbar to prevent content overlap */
 }
-.navbar-btn{
+
+.navbar-btn {
     background: none;
     border: none;
     padding: 10px 18px;
@@ -30,12 +38,14 @@
 }
 
 /* Hover effect */
-.nav-btn:hover{
+.nav-btn:hover {
     background: rgb(197, 88, 221);
     transform: scale(1.05);
 }
+
 /* button styling Section for example: the about me button */
-.GamePJ-btn,.CodingPJ-btn{ 
+.GamePJ-btn,
+.CodingPJ-btn {
     color: white;
     padding: 12px 26px;
     border-radius: 10px;
@@ -46,537 +56,684 @@
     text-shadow: 1px 1px 1px black;
 }
 
-.cv-btn:hover,.AboutMe-btn:hover,.MyExperience-btn:hover,.MyProjects-btn:hover,.Home-btn:hover,.Contact-btn:hover{
+.cv-btn:hover,
+.AboutMe-btn:hover,
+.MyExperience-btn:hover,
+.MyProjects-btn:hover,
+.Home-btn:hover,
+.Contact-btn:hover {
     transform: translateY(-3px);
 }
+
 .arrow-btn:hover {
-        background: silver;
-        transform: translateX(-5px);
-    }
-    span{
-        color: black;
-        font-weight: bold;
-    }
-    
-    body{
-        background-image: url("PurpleBG.jpg");
-        background-size: cover;
-        display: flex;
-        align-items: center; 
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100vh;
-        margin: 0;
-        padding-top: 30px;
-        
-    }
-    h1,h2{
-        color: white;
-        text-align: center;
-        margin-bottom: 50px;
-        text-shadow: 1px 1px 1px white;
-    }
-    
-    .arrow-btn-left{
-        position: fixed;
-        top:20px;
-        left: 25px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
-        transition: color 0.3 ease, transform 0.2 ease;
-        text-shadow: 1px 1px 1px white;
-        
-    }
-    .arrow-btn-left:hover{
-        background: rgba(255, 255, 255, 0.711);
-        transform: translateX(-5px);
-    }
-    .flipped {
-        display: inline-block;
-        transform: scaleX(-1);
-    }
+    background: silver;
+    transform: translateX(-5px);
+}
 
-    .arrow-btn-left span{
-        color: white;
-        font-weight: bold;  
-    }
-    /* HTML Scroll functionality */
-    html{
+span {
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("PurpleBG.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.arrow-btn-left {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3 ease, transform 0.2 ease;
+    text-shadow: 1px 1px 1px white;
+
+}
+
+.arrow-btn-left:hover {
+    background: rgba(255, 255, 255, 0.711);
+    transform: translateX(-5px);
+}
+
+.flipped {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.arrow-btn-left span {
+    color: white;
+    font-weight: bold;
+}
+
+/* HTML Scroll functionality */
+html {
     scroll-behavior: smooth;
-    }
+}
 
-    /* -------------------------------------GameLogo Container Placement-------------------------------------------- */
-    .section-header {
+/* -------------------------------------GameLogo Container Placement-------------------------------------------- */
+.section-header {
     text-align: center;
     font-size: 32px;
     color: white;
     margin-top: 60px;
     margin-bottom: 25px;
     text-shadow: 2px 2px 2px black;
-    }
-    .Projects-Section{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        padding: 20px;
-    }
-    .section-divider, .top-hr{
+}
+
+.Projects-Section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.section-divider,
+.top-hr {
     width: 100%;
     height: 3px;
     border: none;
     border-radius: 5px;
     background: linear-gradient(90deg, black, #351741, #4a1c55);
     margin: 60px auto 40px auto;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
-    /* -------------------------------------SpeedRacers LOGO----------------------------------------- */
-    
-    /* SpeedRacers Card */
-    .SRlogo-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        border: 4px solid purple;
-        background: rgb(200, 180, 59);
-        border-radius: 20px;
-        padding: 25px;
-        width: 500px;
-        height: 750px;
-        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    
-    /* my Game logo Image */
-    .SRlogo{
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border: 2px solid purple;
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    /* Game Description Text */
-    .SRlogo-text{
-        text-align: left;
-        margin-bottom: 50px;
-        color: purple;
-        max-width: 600px;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.5;
-    }
-    .SRlogo-text h2{
-        justify-content: center;
-        color: yellow;
-        margin-bottom: 50px;
-        text-shadow: 4px 4px 4px purple;
-    }
-    .SRlogo-card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px yellow;
-    }
 
-    .SRitch-btn{
-    
-        padding: 10px 25px;
-        text-decoration: none;
-        font-weight: bold;
-        color: purple;
-        border-radius: 10px;
-        border: 3px solid purple;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px yellow;
-    }
-    .SRitch-btn:hover{
-        background: purple;
-        border: 3px solid yellow;
-        color: yellow;
-        transform: scale(1.05);
-        text-shadow: 2px 2px 2px purple;
-    }
-    .SRmoreinfo-btn{
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: purple;
-        border: 3px solid purple;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px yellow;
-        margin-left: 70px;
-    }
-    
-    .SRmoreinfo-btn:hover{
-        background: purple;
-        color: yellow;
-        border: 3px solid yellow;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px purple;
-    }
-    /* -------------------------------------MYGLIDINGSIM-LOGO----------------------------------------- */
+/* -------------------------------------SpeedRacers LOGO----------------------------------------- */
+
+/* SpeedRacers Card */
+.SRlogo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid purple;
+    background: rgb(200, 180, 59);
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+    height: 750px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+/* my Game logo Image */
+.SRlogo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* Game Description Text */
+.SRlogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: purple;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.SRlogo-text h2 {
+    justify-content: center;
+    color: yellow;
+    margin-bottom: 50px;
+    text-shadow: 4px 4px 4px purple;
+}
+
+.SRlogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px yellow;
+}
+
+.SRitch-btn {
+
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    border-radius: 10px;
+    border: 3px solid purple;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px yellow;
+}
+
+.SRitch-btn:hover {
+    background: purple;
+    border: 3px solid yellow;
+    color: yellow;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 2px purple;
+}
+
+.SRmoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    border: 3px solid purple;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px yellow;
+    margin-left: 70px;
+}
+
+.SRmoreinfo-btn:hover {
+    background: purple;
+    color: yellow;
+    border: 3px solid yellow;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px purple;
+}
+
+/* -------------------------------------MYGLIDINGSIM-LOGO----------------------------------------- */
 
 /* MyGlidingSim Card */
-    .MGSlogo-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        border: 4px solid white;
-        background: rgb(66, 66, 66);
-        border-radius: 20px;
-        padding: 25px;
-        width: 500px;
-        height: 750px;
-        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    
-    /* my Game logo Image */
-    .MGSVideo{
-        width: 100%;
-        height: 350px;
-        border: 2px solid white;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    /* Game Description Text */
-    .MGSlogo-text{
-        text-align: left;
-        margin-bottom: 50px;
-        color: white;
-        max-width: 600px;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1.5;
-    }
-    .MGSlogo-text h2{
-        justify-content: center;
-        color: grey;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 2px white;
-    }
-    .MGSlogo-card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px grey;
-    }
-    /* MyGlidingSim itch.io btn design */
-    .MGSitch-btn{
-    
-        padding: 10px 25px;
-        text-decoration: none;
-        font-weight: bold;
-        color: grey;
-        border: 3px solid grey;
-        border-radius: 10px;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px white;
-    }
+.MGSlogo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid white;
+    background: rgb(66, 66, 66);
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+    height: 750px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
-    .MGSitch-btn:hover{
-        background: white;
-        color:  grey;
-        border: 3px solid grey;
-        transform: scale(1.05);
-        text-shadow: 2px 2px 2px grey;
-    }
-    .MGSmoreinfo-btn{
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: grey;
-        border: 3px solid grey;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px white;
-        margin-left: 70px;
-    }
-    
-    .MGSmoreinfo-btn:hover{
-        background: white;
-        color: grey;
-        border: 3px solid grey;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px grey;
-    }
- /* -------------------------------------InfiniteTrigger-LOGO----------------------------------------- */
+/* my Game logo Image */
+.MGSVideo {
+    width: 100%;
+    height: 350px;
+    border: 2px solid white;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* Game Description Text */
+.MGSlogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: white;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px Grey;
+}
+
+.MGSlogo-text h2 {
+    justify-content: center;
+    color: grey;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px white;
+}
+
+.MGSlogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px grey;
+}
+
+/* MyGlidingSim itch.io btn design */
+.MGSitch-btn {
+
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    border: 3px solid grey;
+    border-radius: 10px;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px white;
+}
+
+.MGSitch-btn:hover {
+    background: white;
+    color: grey;
+    border: 3px solid grey;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 2px grey;
+}
+
+.MGSmoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    border: 3px solid grey;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px white;
+    margin-left: 70px;
+}
+
+.MGSmoreinfo-btn:hover {
+    background: white;
+    color: grey;
+    border: 3px solid grey;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px grey;
+}
+
+/* -------------------------------------InfiniteTrigger-LOGO----------------------------------------- */
 
 /* InfiniteTrigger Card */
-    .IFTGlogo-card{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        border: 4px solid rgb(0, 0, 0);
-        background: rgb(45, 78, 52);
-        border-radius: 20px;
-        padding: 25px;
-        width: 500px;
-        height: 750px;
-        max-width: 1000px;
-        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    
-    /* my Game logo Image */
-    .IFTGlogo{
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border: 2px solid black;
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    /* Game Description Text */
-    .IFTGlogo-text{
-        text-align: left;
-        margin-bottom: 50px;
-        color: black;
-        max-width: 600px;
-        font-size: 20px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        line-height: 1.5;
-    }
-    .IFTGlogo-text h2{
-        justify-content: center;
-        text-align: center;
-        color: black;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 2px black;
-    }
-.IFTGlogo-card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px green;
-    }
+.IFTGlogo-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 4px solid rgb(0, 0, 0);
+    background: rgb(45, 78, 52);
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+    height: 750px;
+    max-width: 1000px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
-    /* Infinite Trigger Itch.io btn design */
-    .IFTGitch-btn{
+/* my Game logo Image */
+.IFTGlogo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+}
 
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        border: 3px solid black;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
-    }
+/* Game Description Text */
+.IFTGlogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: black;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    line-height: 1.5;
+}
 
-    .IFTGitch-btn:hover{
-        background: black;
-        color: rgb(45, 78, 52);
-        border: 3px solid black;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px rgb(45, 78, 52);
-    }
+.IFTGlogo-text h2 {
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px black;
+}
 
-    .IFTGmoreinfo-btn{
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        border: 3px solid black;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
-        margin-left: 70px;
-    }
-    
-    .IFTGmoreinfo-btn:hover{
-        background: black;
-        color: rgb(45, 78, 52);
-        border: 3px solid black;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px rgb(45, 78, 52);
-    }
-    /* -------------------------------------GameLogo Container-------------------------------------------- */
-    
-    /* -------------------------------------GUNGAME-LOGO----------------------------------------- */
+.IFTGlogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px green;
+}
+
+/* Infinite Trigger Itch.io btn design */
+.IFTGitch-btn {
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+}
+
+.IFTGitch-btn:hover {
+    background: black;
+    color: rgb(45, 78, 52);
+    border: 3px solid black;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px rgb(45, 78, 52);
+}
+
+.IFTGmoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 70px;
+}
+
+.IFTGmoreinfo-btn:hover {
+    background: black;
+    color: rgb(45, 78, 52);
+    border: 3px solid black;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px rgb(45, 78, 52);
+}
+
+/* -------------------------------------GameLogo Container-------------------------------------------- */
+
+/* -------------------------------------GUNGAME-LOGO----------------------------------------- */
 
 /* GUNGAME Card */
-    .GunGamelogo-card{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        border: 4px solid rgb(58, 57, 57);
-        background: rgb(30, 31, 30);
-        border-radius: 20px;
-        padding: 25px;
-        width: 500px;
-        height: 750px;
-        max-width: 1000px;
-        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    
-    /* my Game logo Image */
-    .GunGamelogo{
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border: 2px solid grey;
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    /* GunGame Description Text */
-    .GunGamelogo-text{
-        text-align: left;
-        margin-bottom: 50px;
-        color: white;
-        max-width: 600px;
-        font-size: 20px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        line-height: 1.5;
-    }
-    .GunGamelogo-text h2{
-        justify-content: center;
-        text-align: center;
-        color: white;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 2px black;
-    }
-.GunGamelogo-card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgb(44, 44, 44);
-    }
+.GunGamelogo-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 4px solid rgb(58, 57, 57);
+    background: rgb(30, 31, 30);
+    border-radius: 20px;
+    padding: 25px;
+    width: 500px;
+    height: 750px;
+    max-width: 1000px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
-    /* GunGame Github btn design */
-    .GunGame-btn{
+/* my Game logo Image */
+.GunGamelogo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-right: 5px;
+}
 
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration:  none;
-        font-weight: bold;
-        color: white;
-        border:2px solid white;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
-    }
+/* GunGame Description Text */
+.GunGamelogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: white;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    line-height: 1.5;
+}
 
-    .GunGame-btn:hover{
-        background: rgb(119, 118, 118);
-        color: white(45, 78, 52);
-        border-radius: 10px;
-        border:2px solid white;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px rgb(45, 78, 52);
-    }
+.GunGamelogo-text h2 {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px black;
+}
 
-    .GunGamemoreinfo-btn{
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        border: 2px solid white;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
-        margin-left: 70px;
-    }
-    
-    .GunGamemoreinfo-btn:hover{
-        background: rgb(119, 118, 118);
-        color: white;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px rgb(45, 78, 52);
-    }
+.GunGamelogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgb(44, 44, 44);
+}
 
-    /* -------------------------------------ShopSimulator-LOGO----------------------------------------- */
+/* GunGame Github btn design */
+.GunGame-btn {
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+}
+
+.GunGame-btn:hover {
+    background: rgb(119, 118, 118);
+    color: white(45, 78, 52);
+    border-radius: 10px;
+    border: 2px solid white;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px rgb(45, 78, 52);
+}
+
+.GunGamemoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 70px;
+}
+
+.GunGamemoreinfo-btn:hover {
+    background: rgb(119, 118, 118);
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px rgb(45, 78, 52);
+}
+
+/* -------------------------------------ShopSimulator-LOGO----------------------------------------- */
 
 /* ShopSim Card */
-    .ShopSimlogo-card{
-        display: flex;
+.ShopSimlogo-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 4px solid rgb(27, 19, 4);
+    background: rgb(150, 126, 95);
+    border-radius: 20px;
+    padding: 25px;
+    width: 750px;
+    height: 750px;
+    max-width: 1000px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+/* my Game logo Image */
+.ShopSimlogo {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border: 4px solid rgb(27, 19, 4);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* GunGame Description Text */
+.ShopSimlogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: white;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(27, 19, 4);
+    line-height: 1.5;
+}
+
+.ShopSimlogo-text h2 {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px rgb(27, 19, 4);
+}
+
+.ShopSimlogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgb(44, 44, 44);
+}
+
+/* GunGame Github btn design */
+.ShopSim-btn {
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+}
+
+.ShopSim-btn:hover {
+    background: rgb(36, 27, 14);
+    color: white(45, 78, 52);
+    border-radius: 10px;
+    border: 2px solid white;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px black;
+}
+
+.ShopSimmoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3 ease;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 70px;
+}
+
+.ShopSimmoreinfo-btn:hover {
+    background: rgb(36, 27, 14);
+    color: white;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px black;
+}
+
+/* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
+
+/* ========= MOBILE VERSION (iPhone 14 Pro Max & similar) ========= */
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+    .navbar {
         flex-direction: column;
+        height: auto;
+        padding: 12px 20px;
+        gap: 50px;
         text-align: center;
-        align-items: center;
-        border: 4px solid rgb(27, 19, 4);
-        background: rgb(150, 126, 95);
-        border-radius: 20px;
-        padding: 25px;
-        width: 750px;
-        height: 750px;
-        max-width: 1000px;
-        box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
     }
-    
-    /* my Game logo Image */
-    .ShopSimlogo{
-        width: 100%;
-        height: 380px;
-        object-fit: cover;
-        border: 4px solid rgb(27, 19, 4);
-        border-radius: 10px;
-        margin-right: 5px;
-    }
-    /* GunGame Description Text */
-    .ShopSimlogo-text{
-        text-align: left;
-        margin-bottom: 50px;
-        color: white;
-        max-width: 600px;
-        font-size: 20px;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        line-height: 1.5;
-    }
-    .ShopSimlogo-text h2{
+
+    .navbar-right {
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* PAGE TITLES */
+    h1,
+    h2 {
+        font-size: 26px !important;
+        margin-bottom: 20px;
         text-align: center;
-        color: white;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 2px black;
-    }
-    .ShopSimlogo-card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgb(44, 44, 44);
     }
 
-    /* GunGame Github btn design */
-    .ShopSim-btn{
-
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration:  none;
-        font-weight: bold;
-        color: white;
-        border:2px solid white;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
+    /* PROJECTS GRID */
+    .Projects-Section {
+        flex-direction: column;
+        gap: 25px;
+        padding: 10px;
     }
 
-    .ShopSim-btn:hover{
-        background: rgb(36, 27, 14);
-        color: white(45, 78, 52);
-        border-radius: 10px;
-        border:2px solid white;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px black;
+    /* ALL PROJECT CARDS */
+    .SRlogo-card,
+    .MGSlogo-card,
+    .IFTGlogo-card,
+    .GunGamelogo-card,
+    .ShopSimlogo-card {
+        width: 95%;
+        height: auto;
+        padding: 20px;
     }
 
-    .ShopSimmoreinfo-btn{
-        padding: 10px 25px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-        border: 2px solid white;
-        transition: 0.3 ease;
-        text-shadow: 2px 2px 2px black;
-        margin-left: 70px;
+    /* ALL PROJECT IMAGES */
+    .SRlogo,
+    .MGSVideo,
+    .IFTGlogo,
+    .GunGamelogo,
+    .ShopSimlogo {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        margin: 0;
+        object-fit: cover;
     }
-    
-    .ShopSimmoreinfo-btn:hover{
-        background: rgb(36, 27, 14);
-        color: white;
-        transform: scale(1.05);
-        text-shadow: 1px 1px 1px black;
+
+    /* ALL PROJECT TEXT */
+    .SRlogo-text,
+    .MGSlogo-text,
+    .IFTGlogo-text,
+    .GunGamelogo-text,
+    .ShopSimlogo-text {
+        font-size: 16px;
+        margin-bottom: 25px;
+        line-height: 1.4;
     }
+
+    /* BUTTONS */
+    .SRitch-btn,
+    .SRmoreinfo-btn,
+    .MGSitch-btn,
+    .MGSmoreinfo-btn,
+    .IFTGitch-btn,
+    .IFTGmoreinfo-btn,
+    .GunGame-btn,
+    .GunGamemoreinfo-btn,
+    .ShopSim-btn,
+    .ShopSimmoreinfo-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+        margin: 5px auto;
+        display: block;
+        text-align: center;
+    }
+
+    /* Removes Forced Left margins */
+    .SRmoreinfo-btn,
+    .MGSmoreinfo-btn,
+    .IFTGmoreinfo-btn,
+    .GunGamemoreinfo-btn,
+    .ShopSimmoreinfo-btn {
+        margin-left: 0;
+    }
+}

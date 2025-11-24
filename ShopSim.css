@@ -1,24 +1,32 @@
 /* Navigation Bar for better Navigation of pages */
 .navbar {
     position: fixed;
-    top: 0;  left: 0;  width: 100%;  height: 80px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
     background: linear-gradient(135deg, #b4a78c, #776c57);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     box-sizing: border-box;
-    z-index: 1000; /* ensures navbar stays on top of everything */
+    z-index: 1000;
+    /* ensures navbar stays on top of everything */
 }
+
 .navbar-right {
     justify-self: end;
     display: flex;
     gap: 20px;
 }
+
 .navbar-spacer {
-    height: 80px; /* same height as navbar to prevent content overlap */
+    height: 80px;
+    /* same height as navbar to prevent content overlap */
 }
+
 .arrow-btn:hover {
     background: silver;
     transform: translateX(-5px);
@@ -39,10 +47,16 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 30px;
-
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
 }
 
-h1,h2 {
+body.loaded {
+    opacity: 1;
+}
+
+h1,
+h2 {
     color: black;
     text-align: center;
     margin-bottom: 50px;
@@ -76,31 +90,35 @@ h1,h2 {
     color: black;
     font-weight: bold;
 }
- .section-divider, .top-hr{
+
+.section-divider,
+.top-hr {
     width: 100%;
     height: 3px;
     border: none;
     border-radius: 5px;
     background: linear-gradient(90deg, rgb(71, 57, 38), #000000, #685539);
     margin: 60px auto 40px auto;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+
 /* --------------------------------------SHopsimulator Info/Description Section-------------------------------------------------------- */
-.ShopSimUML-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid black;
-        background: rgb(73, 62, 45);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px black;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
+.ShopSimUML-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid black;
+    background: rgb(73, 62, 45);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
 .info-section {
     display: flex;
     align-items: center;
@@ -121,7 +139,7 @@ h1,h2 {
     box-shadow: 0 0 10px black;
 }
 
-.ShopSim-description{
+.ShopSim-description {
     flex: 1;
     margin-bottom: 170px;
     color: black;
@@ -130,7 +148,7 @@ h1,h2 {
     text-shadow: 1px 1px 2px black;
 }
 
-.ShopSim-description h2{
+.ShopSim-description h2 {
     color: black;
     font-weight: bold;
     text-align: center;
@@ -138,26 +156,29 @@ h1,h2 {
     text-shadow: 1px 1px 2px black;
     font-size: 28px;
 }
+
 /* ---------------------------------- ShopSimulator Video/ Description -----------------------*/
-.ShopSimVid-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid black;
-        background: rgb(73, 62, 45);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px black;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-.Gameplay-images{
+.ShopSimVid-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid black;
+    background: rgb(73, 62, 45);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.Gameplay-images {
     display: flex;
 }
-.ShopSimVideo-section{
+
+.ShopSimVideo-section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -168,7 +189,8 @@ h1,h2 {
     max-width: 1200px;
     margin-left: 5px;
 }
-.video-image{
+
+.video-image {
     width: 1700px;
     height: auto;
     border-radius: 10px;
@@ -176,7 +198,7 @@ h1,h2 {
     box-shadow: 0 0 10px black;
 }
 
-.ShopSimVid-description{
+.ShopSimVid-description {
     flex: 1;
     margin-bottom: 100px;
     color: black;
@@ -185,11 +207,118 @@ h1,h2 {
     text-shadow: 1px 1px 2px black;
 }
 
-.ShopSimVid-description h2{
+.ShopSimVid-description h2 {
     color: black;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     font-size: 30px;
+}
+
+/* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .arrow-btn-left {
+        top: 10px;
+        left: 20px;
+        font-size: 20px;
+    }
+
+    /* TITLES */
+    h1, h2 {
+        font-size: 26px ;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    /* UNIVERSAL MEDIA FIX */
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* MAIN INFO CARD */
+    .ShopSimUML-card,
+    .ShopSimVid-card {
+        width: 95%;
+        padding: 20px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* LAYOUT: STACK COLUMNS VERTICALLY */
+    .info-section {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .ShopSimVideo-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 30px auto 0 auto;
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    /* IMAGES */
+    .coding-image,
+    .video-image {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    /* TEXT DESCRIPTIONS */
+    .ShopSim-description,
+    .ShopSimVid-description {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .ShopSim-description h2,
+    .ShopSimVid-description h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* DIVIDERS + BODY SPACING */
+    .section-divider,
+    .top-hr {
+        margin: 40px auto 30px auto;
+    }
+
+    body {
+        padding-top: 0px;
+    }
 }
