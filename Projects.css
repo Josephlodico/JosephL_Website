@@ -156,6 +156,7 @@
         width: 100%;
         height: 350px;
         object-fit: cover;
+        border: 2px solid purple;
         border-radius: 10px;
         margin-right: 5px;
     }
@@ -183,15 +184,17 @@
     .SRitch-btn{
     
         padding: 10px 25px;
-        border-radius: 10px;
         text-decoration: none;
         font-weight: bold;
-        color: yellow;
+        color: purple;
+        border-radius: 10px;
+        border: 3px solid purple;
         transition: 0.3 ease;
-        text-shadow: 2px 2px 2px purple;
+        text-shadow: 2px 2px 2px yellow;
     }
     .SRitch-btn:hover{
         background: purple;
+        border: 3px solid yellow;
         color: yellow;
         transform: scale(1.05);
         text-shadow: 2px 2px 2px purple;
@@ -202,7 +205,7 @@
         text-decoration: none;
         font-weight: bold;
         color: purple;
-        border: 2px solid purple;
+        border: 3px solid purple;
         transition: 0.3 ease;
         text-shadow: 2px 2px 2px yellow;
         margin-left: 70px;
@@ -211,6 +214,7 @@
     .SRmoreinfo-btn:hover{
         background: purple;
         color: yellow;
+        border: 3px solid yellow;
         transform: scale(1.05);
         text-shadow: 1px 1px 1px purple;
     }
@@ -233,9 +237,10 @@
     }
     
     /* my Game logo Image */
-    .MGSlogo{
+    .MGSVideo{
         width: 100%;
         height: 350px;
+        border: 2px solid white;
         object-fit: cover;
         border-radius: 10px;
         margin-right: 5px;
@@ -264,10 +269,11 @@
     .MGSitch-btn{
     
         padding: 10px 25px;
-        border-radius: 10px;
         text-decoration: none;
         font-weight: bold;
         color: grey;
+        border: 3px solid grey;
+        border-radius: 10px;
         transition: 0.3 ease;
         text-shadow: 2px 2px 2px white;
     }
@@ -275,6 +281,7 @@
     .MGSitch-btn:hover{
         background: white;
         color:  grey;
+        border: 3px solid grey;
         transform: scale(1.05);
         text-shadow: 2px 2px 2px grey;
     }
@@ -284,7 +291,7 @@
         text-decoration: none;
         font-weight: bold;
         color: grey;
-        border: 2px solid grey;
+        border: 3px solid grey;
         transition: 0.3 ease;
         text-shadow: 2px 2px 2px white;
         margin-left: 70px;
@@ -293,6 +300,7 @@
     .MGSmoreinfo-btn:hover{
         background: white;
         color: grey;
+        border: 3px solid grey;
         transform: scale(1.05);
         text-shadow: 1px 1px 1px grey;
     }
@@ -320,6 +328,7 @@
         width: 100%;
         height: 350px;
         object-fit: cover;
+        border: 2px solid black;
         border-radius: 10px;
         margin-right: 5px;
     }
@@ -354,13 +363,15 @@
         text-decoration: none;
         font-weight: bold;
         color: black;
+        border: 3px solid black;
         transition: 0.3 ease;
         text-shadow: 2px 2px 2px black;
     }
 
     .IFTGitch-btn:hover{
         background: black;
-        color: rgb(45, 78, 52);;
+        color: rgb(45, 78, 52);
+        border: 3px solid black;
         transform: scale(1.05);
         text-shadow: 1px 1px 1px rgb(45, 78, 52);
     }
@@ -371,7 +382,7 @@
         text-decoration: none;
         font-weight: bold;
         color: black;
-        border: 2px solid black;
+        border: 3px solid black;
         transition: 0.3 ease;
         text-shadow: 2px 2px 2px black;
         margin-left: 70px;
@@ -379,7 +390,8 @@
     
     .IFTGmoreinfo-btn:hover{
         background: black;
-        color: rgb(45, 78, 52);;
+        color: rgb(45, 78, 52);
+        border: 3px solid black;
         transform: scale(1.05);
         text-shadow: 1px 1px 1px rgb(45, 78, 52);
     }
@@ -409,6 +421,7 @@
         width: 100%;
         height: 350px;
         object-fit: cover;
+        border: 2px solid grey;
         border-radius: 10px;
         margin-right: 5px;
     }
@@ -498,8 +511,9 @@
     /* my Game logo Image */
     .ShopSimlogo{
         width: 100%;
-        height: 390px;
+        height: 380px;
         object-fit: cover;
+        border: 4px solid rgb(27, 19, 4);
         border-radius: 10px;
         margin-right: 5px;
     }

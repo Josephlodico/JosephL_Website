@@ -113,7 +113,7 @@
     gap: 40px;
     width: 100%;
     max-width: 1800px;
-    margin-left: -20px;
+    margin-left: 0px;
     padding: 0 auto;
 }
 .game-image{
@@ -140,8 +140,61 @@
     text-shadow: 1px 1px 2px silver;
     font-size: 30px;
 }
- /* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
-.MGSLvlDesign-card{
+/* --------------------------------------MyGlidingSym Logo Section Style--------------------------------------------------------- */
+.MGSLogo-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid white;
+        background: rgb(54, 54, 54);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        margin-right: 100px;
+        box-shadow: 0 0 10px white;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+    .MGSLogo-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    margin-top: 30px;
+    max-width: 1800px;
+    margin-left: 0px;
+    padding: 0 auto;
+}
+.MGSLogo-image{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px silver;
+}
+.MGSLogo-description{
+    flex: 1;
+    margin-bottom: 240px;
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px silver;
+}
+
+.MGSLogo-description h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px silver;
+    font-size: 30px;
+}
+/* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
+.MGSLvl1Design-card{
         display: flex;
         flex-direction: flex;
         text-align: left;
@@ -156,7 +209,7 @@
         box-shadow: 0 0 10px white;
         transition: transform 0.3s ease, box-shadow 0.3 ease;
     }
- .GSlevel-section{
+ .GSLevel1-section{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -166,14 +219,14 @@
     margin-left: 0px;
     padding: 0 auto;
 }
-.Level-image{
+.Level1-image{
     width: 950px;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0 0 10px silver;
 }
-.GSlevel-description{
+.GSLevel1-description{
     flex: 1;
     margin-bottom: 160px;
     color: white;
@@ -182,7 +235,109 @@
     text-shadow: 1px 1px 2px silver;
 }
 
-.GSlevel-description h2{
+.GSlevel1-description h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px silver;
+    font-size: 30px;
+}
+/* --------------------------------MyGlidingSym Level 2 Section Style--------------------------------------------------------- */
+.MGSLvl2Design-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid white;
+        background: rgb(54, 54, 54);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px white;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+ .GSLevel2-section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 0px;
+    padding: 0 auto;
+}
+.Level2-image{
+    width: 950px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px silver;
+}
+.GSLevel2-description{
+    flex: 1;
+    margin-bottom: 160px;
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px silver;
+}
+
+.GSLevel2-description h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px silver;
+    font-size: 30px;
+}
+/* ---------------------------------------Checkpoint Section----------------------------------- */
+.MGSCheckpoint-card{
+        display: flex;
+        flex-direction: flex;
+        text-align: left;
+        align-items: left;
+        border: 2px solid white;
+        background: rgb(54, 54, 54);
+        border-radius: 20px;
+        padding: 25px;
+        width: 950px;
+        height: auto;
+        max-width: 1000px;
+        box-shadow: 0 0 10px white;
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+    .Checkpoint-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: -20px;
+    margin-top: 50px;
+    padding: 0 auto;
+}
+.MGSCheckpoint-image{
+    width: 950px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px silver;
+}
+.MGSCheckpoint-description{
+    flex: 1;
+    margin-bottom: 240px;
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px silver;
+}
+
+.MGSCheckpoint-description h2{
     color: white;
     font-weight: bold;
     text-align: center;
