@@ -1,73 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="SpeedRacers.css" />
-    <title>SpeedRacers Page</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="MyProjects.html" class="arrow-btn-left" title="Go Back">
-          <span class="flipped"> ➜ </span>
-          <span>Back to Projects Page </span>
-        </a>
-      </div>
-    </nav>
-    <div class="navbar-spacer"></div>
-    <h1>More Info About SpeedRacers</h1>
-  
-    <div class="SRlevel-section">
-      <img
-        src="GrasslandPic6.png"alt="level Screenshot"class="SRlevel-image"/>
 
-      <div class="SRLvlDesign-card">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="SpeedRacers.css" />
+  <title>SpeedRacers Page</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="MyProjects.html" class="arrow-btn-left" title="Go Back">
+        <span class="flipped"> ➜ </span>
+        <span>Back to Projects Page </span>
+      </a>
+    </div>
+    <div class="navbar-right">
+      <h1>SpeedRacers</h1>
+    </div>
+  </nav>
+  <div class="navbar-spacer"></div>
+  <div class="SRvideo-box">
+    <video src="SpeedRacersTestVideo.mp4" autoplay loop muted playsinlinealt alt="SR video" class="SRVid-Video"></video>
+  </div>
+  <div class="SRVid-section">
+
+    <div class="SRVidDesign-card">
+      <div class="SRVidGame-description">
+        <h2>Description</h2>
+        <div class="section-divider"></div>
+        <p>
+          Play as your own Customized SpeedRacer and race to your
+          hearts content to earn 1st place against other Players.
+        </p>
+      </div>
+    </div>
+    <div class="SRVidDesign-card">
+      <div class="SRVidGame-description">
+        <h2>Project Info</h2>
+        <ul class="SRproject-info-list">
+          <li><strong>Role:</strong> Gampelay, Level Design,UI Programmer</li>
+          <li><strong>Team size:</strong> 1</li>
+          <li><strong>Engine:</strong> Unreal Engine 5</li>
+          <li><strong>Tools:</strong> Perforce, Blender</li>
+          <li><strong>Duration:</strong> 2 Months</li>
+          <li><strong>Date:</strong> October and November 2025</li>
+          <li><strong>Theme:</strong> Racing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------ -->
+  <div class="section-divider"></div>
+  <div class="SRlevel-section">
+    <img src="GrasslandPic6.png" alt="level Screenshot" class="SRlevel-image" />
+
+    <div class="SRLvlDesign-card">
       <div class="SRGame-description">
         <h2>Level Design / Grassland World</h2>
         <div class="section-divider"></div>
         <p>
-          This is the level design of my level in SpeedRacers Called Grassland.
-          This world is supposed to have a grass and Tree type environment Style
-          of world. it has a place to spawn and move around and interact with
-          items like, coins, buttons,and other Objects. Then Enter A 2 player
-          race and compete for First place against Each other. (This Image is
-          not the Final version)
-        </p>
-        </div>
-      </div>
-    </div>
-    <div class="SRMenuWorld-section">
-      <img src="StartMenuWorldPic2.png"alt="level Screenshot"class="SRStartMenu-image"/>
-      <div class="MenuWorldDesign-card">
-      <div class="SRStartMenu-description">
-        <h2>SpeedRacers / StartMenuWorld</h2>
-        <div class="section-divider"></div>
-        <p>
-          In SpeedRacers all The Menu Stuff takes place here,and 
-          this is how it Works: Goes to StartMenu then the player
-          Goes to Customizing The SpeedRacer Character, then after 
-          Goes To Choosing Level Select were the only option is Grassland 
-          For Now.
-
+          This is the level design of my level in SpeedRacers Called
+          Grassland. This world is supposed to have a grass and Tree type
+          environment Style of world. it has a place to spawn and move around
+          and interact with items like, coins, buttons,and other Objects. Then
+          Enter A 2 player race and compete for First place against Each
+          other. (This Image is not the Final version)
         </p>
       </div>
     </div>
   </div>
   <div class="SRMenuWorld-section">
-      <img src="GrasslandTopView.png"alt="Track Screenshot"class="SRTrack-image"/>
-      <div class="TrackDesign-card">
+    <img src="StartMenuWorldPic2.png" alt="level Screenshot" class="SRStartMenu-image" />
+    <div class="MenuWorldDesign-card">
+      <div class="SRStartMenu-description">
+        <h2>SpeedRacers / StartMenuWorld</h2>
+        <div class="section-divider"></div>
+        <p>
+          In SpeedRacers all The Menu Stuff takes place here,and this is how
+          it Works: Goes to StartMenu then the player Goes to Customizing The
+          SpeedRacer Character, then after Goes To Choosing Level Select were
+          the only option is Grassland For Now.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="SRMenuWorld-section">
+    <img src="GrasslandTopView.png" alt="Track Screenshot" class="SRTrack-image" />
+    <div class="TrackDesign-card">
       <div class="SRTrack-description">
         <h2>SpeedRacers / Track Top View</h2>
         <div class="section-divider"></div>
         <p>
-          Here is a top View Of the Track the players will race on in order 
-          to earn their Victory playing Against Each Other. You can also 
-          Collect Coins while racing on the track.
+          Here is a top View Of the Track the players will race on in order to
+          earn their Victory playing Against Each Other. You can also Collect
+          Coins while racing on the track.
         </p>
       </div>
     </div>
   </div>
   <script src="Projects.js"></script>
-  </body>
+</body>
+
 </html>

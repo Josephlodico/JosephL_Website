@@ -99,8 +99,80 @@ h2 {
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+/* --------------------------------------Info Section (video) Style and layout--------------------------------------------------------- */
+.SRVidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(78, 1, 78);
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
-/* --------------------------------------Info Section Style and layout--------------------------------------------------------- */
+.SRVid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.SRVid-Video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.SRvideo-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.SRVidGame-description {
+    flex: 1;
+    color: yellow;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px purple;
+}
+
+.SRVidGame-description h2 {
+    color: yellow;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px purple;
+    font-size: 30px;
+}
+.SRproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: yellow;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .SRproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .SRproject-info-list strong{
+    color: yellow;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px purple;
+  }
+
+
+/* --------------------------------------Level DesignStyle and layout--------------------------------------------------------- */
 .SRLvlDesign-card {
     display: flex;
     flex-direction: flex;

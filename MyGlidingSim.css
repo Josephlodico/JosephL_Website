@@ -1,472 +1,525 @@
   /* --------------------------------------Main Page Style--------------------------------------------------------- */
-/* Navigation Bar for better Navigation of pages */
-.navbar {
-    position: fixed;
-    top: 0;  left: 0;  width: 100%;  height: 80px;
-    background: linear-gradient(135deg, #515152, #bbbebe);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    box-sizing: border-box;
-    z-index: 1000; /* ensures navbar stays on top of everything */
-}
-.navbar-right {
-    justify-self: end;
-    display: flex;
-    gap: 20px;
-}
-.navbar-spacer {
-    height: 80px; /* same height as navbar to prevent content overlap */
-}
+  /* Navigation Bar for better Navigation of pages */
+  .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(135deg, #515152, #bbbebe);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      box-sizing: border-box;
+      z-index: 1000;
+      /* ensures navbar stays on top of everything */
+  }
+
+  .navbar-right {
+      justify-self: end;
+      display: flex;
+      gap: 20px;
+  }
+
+  .navbar-spacer {
+      height: 80px;
+      /* same height as navbar to prevent content overlap */
+  }
+
   .arrow-btn:hover {
-        background: silver;
-        transform: translateX(-5px);
-    }
-    span{
-        color: black;
-        font-weight: bold;
-    }
-    
-    body{
-        background: grey;
-        background-size: cover;
-        display: flex;
-        align-items: center; 
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100vh;
-        margin: 0;
-        padding-top: 30px;
-        opacity: 0;
-        transition: opacity 0.3s ease-in;
-}
-    body.loaded{
-    opacity: 1;
-    }
-        
-    
-    h1,h2{
-        color: white;
-        text-align: center;
-        margin-bottom: 50px;
-        text-shadow: 2px 2px 2px white;
-    }
-    
-    .arrow-btn-left{
-        position: fixed;
-        top:20px;
-        left: 25px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;
-        transition: color 0.3 ease, transform 0.2 ease;
-        text-shadow: 1px 1px 1px white;
-        
-    }
-    .arrow-btn-left:hover{
-        background: rgba(255, 255, 255, 0.711);
-        transform: translateX(-5px);
-    }
-    .flipped {
-        display: inline-block;
-        transform: scaleX(-1);
-    }
+      background: silver;
+      transform: translateX(-5px);
+  }
 
-    .arrow-btn-left span{
-        color: white;
-        font-weight: bold;  
-    }
-    .section-divider, .top-hr{
-    width: 100%;
-    height: 3px;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(90deg, rgb(40, 41, 40), #929292, #2f302f);
-    margin: 60px auto 40px auto;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-}
-    .video-image{
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-    /* --------------------------------------MyGlidingSym Info Section Style--------------------------------------------------------- */
-.MGSInfo-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid white;
-        background: rgb(54, 54, 54);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px white;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    .info-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  span {
+      color: black;
+      font-weight: bold;
+  }
+
+  body {
+      background: grey;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 30px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+  }
+
+  body.loaded {
+      opacity: 1;
+  }
+
+
+  h1,
+  h2 {
+      color: white;
+      text-align: center;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 2px white;
+  }
+
+  .arrow-btn-left {
+      position: fixed;
+      top: 20px;
+      left: 25px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3 ease, transform 0.2 ease;
+      text-shadow: 1px 1px 1px white;
+
+  }
+
+  .arrow-btn-left:hover {
+      background: rgba(255, 255, 255, 0.711);
+      transform: translateX(-5px);
+  }
+
+  .flipped {
+      display: inline-block;
+      transform: scaleX(-1);
+  }
+
+  .arrow-btn-left span {
+      color: white;
+      font-weight: bold;
+  }
+
+  .section-divider,
+  .top-hr {
+      width: 100%;
+      height: 3px;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(90deg, rgb(40, 41, 40), #929292, #2f302f);
+      margin: 60px auto 40px auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+
+  /* --------------------------------------MyGlidingSym Info Section Style--------------------------------------------------------- */
+  .MGSInfo-card {
+      flex: 1;
+      max-width: 50%;
+      border: 2px solid white;
+      background: rgb(54, 54, 54);
+      box-shadow: 0 0 10px white;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+      margin-bottom: 70px;
+  }
+
+  .MGSVid-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      width: 100%;
+      max-width: 1600px;
+  }
+
+  .MGSvideo-video {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px silver;
+  }
+
+  /* Video on Top */
+  .MGSvideo-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      /* Some Spacing*/
+      /* Video on Top */
+      /* ------------------ */
+  }
+
+  .MGSGame-description {
+      flex: 1;
+      color: white;
+      font-size: 25px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px silver;
+  }
+
+  .MGSGame-description h2 {
+      color: white;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px silver;
+      font-size: 30px;
+  }
+  .MGSproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
     text-align: left;
-    gap: 40px;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: 0px;
-    padding: 0 auto;
-}
-.game-image{
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-.GSGame-description{
-    flex: 1;
-    margin-bottom: 160px;
     color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px silver;
-}
-
-.GSGame-description h2{
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .MGSproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .MGSproject-info-list strong{
     color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
+    font-weight: 900;
     text-shadow: 1px 1px 2px silver;
-    font-size: 30px;
-}
-/* --------------------------------------MyGlidingSym Logo Section Style--------------------------------------------------------- */
-.MGSLogo-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid white;
-        background: rgb(54, 54, 54);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        margin-right: 100px;
-        box-shadow: 0 0 10px white;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    .MGSLogo-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    gap: 40px;
-    width: 100%;
-    margin-top: 30px;
-    max-width: 1800px;
-    margin-left: 0px;
-    padding: 0 auto;
-}
-.MGSLogo-image{
-    width: 600px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-.MGSLogo-description{
-    flex: 1;
-    margin-bottom: 240px;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px silver;
-}
+  }
+  
 
-.MGSLogo-description h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px silver;
-    font-size: 30px;
-}
-/* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
-.MGSLvl1Design-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid white;
-        background: rgb(54, 54, 54);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px white;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
- .GSLevel1-section{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: 0px;
-    padding: 0 auto;
-}
-.Level1-image{
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-.GSLevel1-description{
-    flex: 1;
-    margin-bottom: 160px;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px silver;
-}
+  /* --------------------------------------MyGlidingSym Logo Section Style--------------------------------------------------------- */
+  .MGSLogo-card {
+      display: flex;
+      flex-direction: flex;
+      text-align: left;
+      align-items: left;
+      border: 2px solid white;
+      background: rgb(54, 54, 54);
+      border-radius: 20px;
+      padding: 25px;
+      width: 950px;
+      height: auto;
+      max-width: 1000px;
+      margin-right: 100px;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+  }
 
-.GSlevel1-description h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px silver;
-    font-size: 30px;
-}
-/* --------------------------------MyGlidingSym Level 2 Section Style--------------------------------------------------------- */
-.MGSLvl2Design-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid white;
-        background: rgb(54, 54, 54);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px white;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
- .GSLevel2-section{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: 0px;
-    padding: 0 auto;
-}
-.Level2-image{
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-.GSLevel2-description{
-    flex: 1;
-    margin-bottom: 160px;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px silver;
-}
+  .MGSLogo-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 40px;
+      width: 100%;
+      margin-top: 30px;
+      max-width: 1800px;
+      margin-left: 0px;
+      padding: 0 auto;
+  }
 
-.GSLevel2-description h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px silver;
-    font-size: 30px;
-}
-/* ---------------------------------------Checkpoint Section----------------------------------- */
-.MGSCheckpoint-card{
-        display: flex;
-        flex-direction: flex;
-        text-align: left;
-        align-items: left;
-        border: 2px solid white;
-        background: rgb(54, 54, 54);
-        border-radius: 20px;
-        padding: 25px;
-        width: 950px;
-        height: auto;
-        max-width: 1000px;
-        box-shadow: 0 0 10px white;
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-    }
-    .Checkpoint-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    gap: 40px;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: -20px;
-    margin-top: 50px;
-    padding: 0 auto;
-}
-.MGSCheckpoint-image{
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0 0 10px silver;
-}
-.MGSCheckpoint-description{
-    flex: 1;
-    margin-bottom: 240px;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px silver;
-}
+  .MGSLogo-image {
+      width: 600px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px silver;
+  }
 
-.MGSCheckpoint-description h2{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px silver;
-    font-size: 30px;
-}
-/* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
-@media (max-width: 480px) {
+  .MGSLogo-description {
+      flex: 1;
+      margin-bottom: 240px;
+      color: white;
+      font-size: 24px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px silver;
+  }
 
-    /* ----------- NAVBAR ----------- */
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 30px 20px;
-        gap: 12px;
-        text-align: center;
-    }
+  .MGSLogo-description h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px silver;
+      font-size: 30px;
+  }
 
-    .navbar-right {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+  /* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
+  .MGSLvl1Design-card {
+      display: flex;
+      flex-direction: flex;
+      text-align: left;
+      align-items: left;
+      border: 2px solid white;
+      background: rgb(54, 54, 54);
+      border-radius: 20px;
+      padding: 25px;
+      width: 950px;
+      height: auto;
+      max-width: 1000px;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+  }
 
-    .nav-btn {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
+  .GSLevel1-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 40px;
+      width: 100%;
+      max-width: 1800px;
+      margin-left: 0px;
+      padding: 0 auto;
+  }
 
-    .arrow-btn-left {
-        top: 10px;
-        left: 20px;
-        font-size: 20px;
-    }
+  .Level1-image {
+      width: 950px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px silver;
+  }
 
-    /* ----------- HEADERS ----------- */
-    h1, h2 {
-        font-size: 26px ;
-        margin-bottom: 50px;
-        text-align: center;
-    }
+  .GSLevel1-description {
+      flex: 1;
+      margin-bottom: 160px;
+      color: white;
+      font-size: 24px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px silver;
+  }
 
-    /* ----------- UNIVERSAL IMAGE FIX ----------- */
-    img, video {
-        max-width: 100%;
-        height: auto;
-    }
+  .GSlevel1-description h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px silver;
+      font-size: 30px;
+  }
 
-    /* ----------- MAIN CARD FIXES ----------- */
-    .MGSInfo-card,
-    .MGSLogo-card,
-    .MGSLvl1Design-card,
-    .MGSLvl2Design-card,
-    .MGSCheckpoint-card {
-        width: 90%;
-        padding: 20px;
-        height: auto;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
+  /* --------------------------------MyGlidingSym Level 2 Section Style--------------------------------------------------------- */
+  .MGSLvl2Design-card {
+      display: flex;
+      flex-direction: flex;
+      text-align: left;
+      align-items: left;
+      border: 2px solid white;
+      background: rgb(54, 54, 54);
+      border-radius: 20px;
+      padding: 25px;
+      width: 950px;
+      height: auto;
+      max-width: 1000px;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+  }
 
-    /* ----------- ALL SECTION LAYOUTS ----------- */
-    .info-section,
-    .MGSLogo-section,
-    .GSLevel1-section,
-    .GSLevel2-section,
-    .Checkpoint-section {
-        flex-direction: column;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        gap: 20px;
-        padding: 0 10px;
-    }
+  .GSLevel2-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 40px;
+      width: 100%;
+      max-width: 1800px;
+      margin-left: 0px;
+      padding: 0 auto;
+  }
 
-    /* ---------- ALL IMAGES INSIDE SECTIONS ---------- */
-    .video-image,
-    .game-image,
-    .MGSLogo-image,
-    .Level1-image,
-    .Level2-image,
-    .MGSCheckpoint-image {
-        width: 95%;
-        height: auto;
-        max-height: 350px;
-        object-fit: cover;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
+  .Level2-image {
+      width: 950px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px silver;
+  }
 
-    /* ----------- ALL DESCRIPTIONS ----------- */
-    .GSGame-description,
-    .MGSLogo-description,
-    .GSLevel1-description,
-    .GSLevel2-description,
-    .MGSCheckpoint-description {
-        font-size: 16px;
-        line-height: 1.4;
-        margin-bottom: 20px;
-        text-align: center;
-        padding: 0 10px;
-    }
+  .GSLevel2-description {
+      flex: 1;
+      margin-bottom: 160px;
+      color: white;
+      font-size: 24px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px silver;
+  }
 
-    /* Title inside text blocks */
-    .GSGame-description h2,
-    .MGSLogo-description h2,
-    .GSLevel1-description h2,
-    .GSLevel2-description h2,
-    .MGSCheckpoint-description h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
+  .GSLevel2-description h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px silver;
+      font-size: 30px;
+  }
 
-    /* ----------- DIVIDERS ----------- */
-    .section-divider,
-    .top-hr {
-        margin: 40px auto 30px auto;
-    }
+  /* ---------------------------------------Checkpoint Section----------------------------------- */
+  .MGSCheckpoint-card {
+      display: flex;
+      flex-direction: flex;
+      text-align: left;
+      align-items: left;
+      border: 2px solid white;
+      background: rgb(54, 54, 54);
+      border-radius: 20px;
+      padding: 25px;
+      width: 950px;
+      height: auto;
+      max-width: 1000px;
+      box-shadow: 0 0 10px white;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+  }
 
-    /* Remove giant bottom padding so content fits nicer */
-    body {
-        padding-top: 20px;
-    }
-}
+  .Checkpoint-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      gap: 40px;
+      width: 100%;
+      max-width: 1800px;
+      margin-left: -20px;
+      margin-top: 50px;
+      padding: 0 auto;
+  }
+
+  .MGSCheckpoint-image {
+      width: 950px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 0 0 10px silver;
+  }
+
+  .MGSCheckpoint-description {
+      flex: 1;
+      margin-bottom: 240px;
+      color: white;
+      font-size: 24px;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px silver;
+  }
+
+  .MGSCheckpoint-description h2 {
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px silver;
+      font-size: 30px;
+  }
+
+  /* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
+  @media (max-width: 480px) {
+
+      /* ----------- NAVBAR ----------- */
+      .navbar {
+          flex-direction: column;
+          height: auto;
+          padding: 30px 20px;
+          gap: 12px;
+          text-align: center;
+      }
+
+      .navbar-right {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+      }
+
+      .nav-btn {
+          padding: 6px 10px;
+          font-size: 12px;
+      }
+
+      .arrow-btn-left {
+          top: 10px;
+          left: 20px;
+          font-size: 20px;
+      }
+
+      /* ----------- HEADERS ----------- */
+      h1,
+      h2 {
+          font-size: 26px;
+          margin-bottom: 50px;
+          text-align: center;
+      }
+
+      /* ----------- UNIVERSAL IMAGE FIX ----------- */
+      img,
+      video {
+          max-width: 100%;
+          height: auto;
+      }
+
+      /* ----------- MAIN CARD FIXES ----------- */
+      .MGSInfo-card,
+      .MGSLogo-card,
+      .MGSLvl1Design-card,
+      .MGSLvl2Design-card,
+      .MGSCheckpoint-card {
+          width: 90%;
+          padding: 20px;
+          height: auto;
+          margin: 0 auto;
+          margin-bottom: 10px;
+      }
+
+      /* ----------- ALL SECTION LAYOUTS ----------- */
+      .info-section,
+      .MGSLogo-section,
+      .GSLevel1-section,
+      .GSLevel2-section,
+      .Checkpoint-section {
+          flex-direction: column;
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+          gap: 20px;
+          padding: 0 10px;
+      }
+
+      /* ---------- ALL IMAGES INSIDE SECTIONS ---------- */
+      .video-image,
+      .game-image,
+      .MGSLogo-image,
+      .Level1-image,
+      .Level2-image,
+      .MGSCheckpoint-image {
+          width: 95%;
+          height: auto;
+          max-height: 350px;
+          object-fit: cover;
+          margin: 0 auto;
+          margin-bottom: 10px;
+      }
+
+      /* ----------- ALL DESCRIPTIONS ----------- */
+      .GSGame-description,
+      .MGSLogo-description,
+      .GSLevel1-description,
+      .GSLevel2-description,
+      .MGSCheckpoint-description {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+          text-align: center;
+          padding: 0 10px;
+      }
+
+      /* Title inside text blocks */
+      .GSGame-description h2,
+      .MGSLogo-description h2,
+      .GSLevel1-description h2,
+      .GSLevel2-description h2,
+      .MGSCheckpoint-description h2 {
+          font-size: 22px;
+          margin-bottom: 15px;
+          text-align: center;
+      }
+
+      /* ----------- DIVIDERS ----------- */
+      .section-divider,
+      .top-hr {
+          margin: 40px auto 30px auto;
+      }
+
+      /* Remove giant bottom padding so content fits nicer */
+      body {
+          padding-top: 20px;
+      }
+  }

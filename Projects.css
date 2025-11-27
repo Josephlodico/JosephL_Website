@@ -183,11 +183,20 @@ html {
 }
 
 /* my Game logo Image */
-.SRlogo {
+/* .SRlogo {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border: 2px solid purple;
+    border-radius: 10px;
+    margin-right: 5px;
+} */
+/* my SpeedRacers Video*/
+.SRVideo {
+    width: 100%;
+    height: 350px;
+    border: 2px solid purple;
+    object-fit: cover;
     border-radius: 10px;
     margin-right: 5px;
 }
@@ -462,7 +471,7 @@ html {
 }
 
 /* LeapCity2 logo Image */
-.LeapCity2Logo {
+.LC2Video {
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -510,7 +519,7 @@ html {
 }
 
 .LeapCity2itch-btn:hover {
-    background: rgb(167, 104, 108);
+    background: rgb(209, 76, 83);
     color: white(45, 78, 52);
     border-radius: 10px;
     border: 2px solid white;

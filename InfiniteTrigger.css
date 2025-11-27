@@ -102,6 +102,82 @@ h2 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* ---------------------------------InfiniteTrigger Video/Description, Project Info Section-------------------------------------------------------- */
+.IFTGvideo-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(26, 48, 31);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.IFTGvideo-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.IFTG-video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.IFTGvideo-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;/* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.IFTGvideo-description {
+    flex: 1;
+    color: black;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black;
+}
+
+.IFTGvideo-description h2 {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 28px;
+}
+
+.IFTGproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.IFTGproject-info-list li {
+    margin-bottom: 5px;
+}
+
+.IFTGproject-info-list strong {
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+}
+
+
 /* --------------------------------------InfiniteTrigger Info/Description Section-------------------------------------------------------- */
 .IFTGAbout-card {
     display: flex;
@@ -119,7 +195,7 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.info-section {
+.IFTGAbout-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,7 +207,7 @@ h2 {
     padding: 0 auto;
 }
 
-.game-image {
+.gameAbout-image {
     width: 850px;
     height: auto;
     border-radius: 10px;
@@ -139,7 +215,7 @@ h2 {
     box-shadow: 0 0 10px black;
 }
 
-.IFTG-description {
+.IFTGAbout-description {
     flex: 1;
     margin-bottom: 100px;
     color: black;
@@ -148,7 +224,7 @@ h2 {
     text-shadow: 1px 1px 1px black;
 }
 
-.IFTG-description h2 {
+.IFTGAbout-description h2 {
     color: black;
     font-weight: bold;
     text-align: center;
@@ -258,7 +334,8 @@ h2 {
 
 /* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
 @media (max-width: 480px) {
-/* -------- NAVBAR -------- */
+
+    /* -------- NAVBAR -------- */
     .navbar {
         flex-direction: column;
         height: auto;
@@ -286,14 +363,16 @@ h2 {
     }
 
     /* -------- HEADERS -------- */
-    h1, h2 {
-        font-size: 26px ;
+    h1,
+    h2 {
+        font-size: 26px;
         margin-bottom: 50px;
         text-align: center;
     }
 
     /* -------- UNIVERSAL MEDIA FIX -------- */
-    img, video {
+    img,
+    video {
         max-width: 100%;
         height: auto;
     }

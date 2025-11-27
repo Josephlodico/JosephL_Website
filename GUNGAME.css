@@ -90,6 +90,78 @@ h2 {
     color: white;
     font-weight: bold;
 }
+/* --------------------------------------Description/Project Info Section (video) Style and layout--------------------------------------------------------- */
+.GGVidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(58, 58, 57);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.GGVid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.GG-Video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.GGvideo-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.GGVid-description {
+    flex: 1;
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px black;
+}
+
+.GGVid-description h2 {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+}
+.GGproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 2px black;
+  }
+  .GGproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .GGproject-info-list strong{
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+  }
 
 /* -------------------------------------GUNGAME Info Section-------------------------------- */
 .info-section {

@@ -99,6 +99,80 @@ h2 {
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+/* --------------------------------------LeapCity 2 Video Description/Project Info--------------------------*/
+.LC2VidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(209, 76, 83);
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.LC2Vid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.LC2Vid-Video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+.LC2video-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.LC2VidGame-description {
+    flex: 1;
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px black;
+}
+
+.LC2VidGame-description h2 {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+}
+.LC2project-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 2px black;
+  }
+  .LC2project-info-list li{
+    margin-bottom: 5px;
+  }
+  .LC2project-info-list strong{
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+  }
+
+
 /* --------------------------------------LeapCity 2 Level 1 Design Section--------------------------*/
 .LC2LvlDesign-card {
     display: flex;

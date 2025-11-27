@@ -55,8 +55,7 @@ body.loaded {
     opacity: 1;
 }
 
-h1,
-h2 {
+h1,h2 {
     color: black;
     text-align: center;
     margin-bottom: 50px;
@@ -101,6 +100,78 @@ h2 {
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+/* --------------------------------------Info Section (video) Style and layout--------------------------------------------------------- */
+.SSVidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(73, 62, 45);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.SSVid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.SSVid-Video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.SSvideo-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.SSVid-description {
+    flex: 1;
+    color: black;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px black;
+}
+
+.SSVid-description h2 {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+}
+.SSproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .SSproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .SSproject-info-list strong{
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+  }
+
 
 /* --------------------------------------SHopsimulator Info/Description Section-------------------------------------------------------- */
 .ShopSimUML-card {
@@ -189,15 +260,6 @@ h2 {
     max-width: 1200px;
     margin-left: 5px;
 }
-
-.video-image {
-    width: 1700px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0 0 10px black;
-}
-
 .ShopSimVid-description {
     flex: 1;
     margin-bottom: 100px;
