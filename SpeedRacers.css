@@ -336,7 +336,61 @@ margin-bottom: 40px; /* Some Spacing*/
     text-shadow: 1px 1px 2px purple;
     font-size: 30px;
 }
+/* ---------------------------------------SpeedRacers Logo */
+.SRLogo-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid yellow;
+    background: rgb(78, 1, 78);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px yellow;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
+.SRLogo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+}
+
+.SRLogo-image {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px yellow;
+    margin-left: 20px;
+}
+
+.SRLogo-description {
+    flex: 1;
+    margin-bottom: 200px;
+    color: yellow;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px purple;
+}
+
+.SRLogo-description h2 {
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px purple;
+    font-size: 30px;
+}
 /* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
 @media (max-width: 480px) {
 
