@@ -103,7 +103,7 @@ span {
 }
 
 body {
-    background-image: url("BlackBG.jpg");
+    background-image: url("images/BlackBG.jpg");
     background-size: cover;
     display: flex;
     align-items: center;
