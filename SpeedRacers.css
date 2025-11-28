@@ -99,7 +99,7 @@ h2 {
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
-/* --------------------------------------Info Section (video) Style and layout--------------------------------------------------------- */
+/* ------------SpeedRacers Description, Project Info Section, and (video) Style and layout--------------------------------------------------------- */
 .SRVidDesign-card {
     flex: 1;
     max-width: 50%;
@@ -336,7 +336,7 @@ margin-bottom: 40px; /* Some Spacing*/
     text-shadow: 1px 1px 2px purple;
     font-size: 30px;
 }
-/* ---------------------------------------SpeedRacers Logo */
+/* ----------SpeedRacers Logo --------------*/
 .SRLogo-card {
     display: flex;
     flex-direction: flex;
@@ -391,15 +391,114 @@ margin-bottom: 40px; /* Some Spacing*/
     text-shadow: 1px 1px 2px purple;
     font-size: 30px;
 }
-/* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
-@media (max-width: 480px) {
+/* ---------------------------------- DESKTOP + TABLET RESPONSIVE (900px)----------------------------- */
+@media (max-width: 900px) {
 
-    /* NAVBAR */
+    /* NAVBAR FIX */
     .navbar {
         flex-direction: column;
-        height: auto;
-        padding: 40px 20px;
+        min-height: 120px;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 12px;
+    }
+
+    .navbar-spacer {
+        height: 150px; /* prevents overlap */
+    }
+
+    /* BACK ARROW FIX */
+    .arrow-btn-left {
+        top: 15px;
+        left: 15px;
+        z-index: 2000;
+        font-size: 18px;
+    }
+
+    /* TITLES */
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    /* MAIN TWO-COLUMN SECTIONS (video + text, image + text) */
+    .SRVid-section,
+    .SRlevel-section,
+    .SRMenuWorld-section,
+    .SRTrack-section,
+    .SRLogo-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 25px;
+        padding: 0 20px;
+        margin: 0 -20px;
+    }
+
+    /* GENERIC CARD RESIZE */
+    .SRVidDesign-card,
+    .SRLvlDesign-card,
+    .MenuWorldDesign-card,
+    .TrackDesign-card,
+    .SRLogo-card {
+        width: 95%;
+        max-width: 600px;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto 40px auto;
+    }
+
+    /* IMAGE RESIZE */
+    .SRVid-Video,
+    .SRlevel-image,
+    .SRStartMenu-image,
+    .SRTrack-image,
+    .SRLogo-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* TEXT */
+    .SRVidGame-description,
+    .SRGame-description,
+    .SRStartMenu-description,
+    .SRTrack-description,
+    .SRLogo-description {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .SRVidGame-description h2,
+    .SRGame-description h2,
+    .SRStartMenu-description h2,
+    .SRTrack-description h2,
+    .SRLogo-description h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+/* ---------------------------- MOBILE + Responsive (600px)--------------------------------------- */
+@media (max-width: 600px) {
+
+    /* Navbar becomes stacked */
+    .navbar {
+        flex-direction: column;
+        padding: 30px 15px;
+        gap: 15px;
         text-align: center;
     }
 
@@ -409,72 +508,59 @@ margin-bottom: 40px; /* Some Spacing*/
         gap: 10px;
     }
 
+    /* Smaller buttons */
     .nav-btn {
-        padding: 6px 10px;
-        font-size: 12px;
-        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 13px;
     }
 
-    /* TITLES */
-    h1, h2 {
-        font-size: 26px ;
-        margin-bottom: 50px;
-        text-align: center;
+    /* Back arrow remains correct */
+    .arrow-btn-left {
+        top: 12px;
+        left: 12px;
+        font-size: 18px;
     }
 
-    /* MAIN CONTENT SECTIONS */
-    .SRlevel-section,
-    .SRMenuWorld-section {
-        flex-direction: column;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        gap: 20px;
-        padding: 0 10px;
-    }
-
-    /* CARDS */
+    /* Cards scale down */
+    .SRVidDesign-card,
     .SRLvlDesign-card,
-    .MenuWorldDesign-card {
+    .MenuWorldDesign-card,
+    .TrackDesign-card,
+    .SRLogo-card {
         width: 90%;
-        padding: 20px;
-        height: auto;
-        margin: 0 auto;
+        padding: 18px;
     }
 
-    /* IMAGES */
+    /* Images shrink nicely */
+    .SRVid-Video,
     .SRlevel-image,
-    .SRStartMenu-image {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+    .SRStartMenu-image,
+    .SRTrack-image,
+    .SRLogo-image {
         max-height: 250px;
-        object-fit: cover;
+        border-width: 2px;
     }
 
-    /* TEXT DESCRIPTIONS */
+    /* Text becomes easier to read on small screen */
+    .SRVidGame-description,
     .SRGame-description,
-    .SRStartMenu-description {
+    .SRStartMenu-description,
+    .SRTrack-description,
+    .SRLogo-description {
         font-size: 16px;
-        line-height: 1.4;
-        margin-bottom: 20px;
-        text-align: center;
         padding: 0 10px;
     }
 
+    .SRVidGame-description h2,
     .SRGame-description h2,
-    .SRStartMenu-description h2 {
+    .SRStartMenu-description h2,
+    .SRTrack-description h2,
+    .SRLogo-description h2 {
         font-size: 22px;
-        text-align: center;
     }
 
-    /* SPACING */
-    .section-divider,
-    .top-hr {
+    /* Better spacing */
+    .section-divider {
         margin: 40px auto 30px auto;
-    }
-
-    body {
-        padding-top: 20px;
     }
 }

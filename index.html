@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>JL Porfolio</title>
+    <!-- Preload all navbar images -->
     <link rel="preload" href="GithubLogo.png" as="image">
     <link rel="preload" href="itchioLogo.png" as="image">
     <link rel="preload" href="LinkedInLogo.png" as="image">
+
+    <!-- Preload CSS, then load normally -->
+    <link rel="preload" href="index.css" as="style">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Preload webpage nackground -->
+    <link rel="preload" href="BlackBG.jpg" as="image">
+
+
 </head>
 
 <body>
-    <h1 id="Home"></h1>
     <nav class="navbar">
         <div class="navbar-left">
             <h1 class="site-title"> Joseph Lodico Porfolio Page</h1>
         </div>
+
         <div class="navbar-right">
             <a href="#Home" class="Home-btn nav-btn"> Home</a>
             <a href="#Education" class="Education-btn nav-btn"> Education</a>
@@ -27,142 +37,143 @@
             <a href="MyProjects.html" class="MyProjects-btn nav-btn"> My Projects</a>
         </div>
 
-        <!-- Social Links Section -->
+        <!-- Social Links Right of Navbar Section -->
         <div class="navbar-socials">
 
             <a href="https://github.com/Josephlodico" target="_blank" class="social-box github">
-                <img src="GithubLogo.png" loading="lazy" alt="GithubLogo">
+                <img src="GithubLogo.png" alt="GithubLogo">
             </a>
             <a href="https://josephlodico.itch.io/" target="_blank" class="social-box itchio">
-                <img src="itchioLogo.png" loading="lazy" alt="Itch.io Logo">
+                <img src="itchioLogo.png" alt="Itch.io Logo">
             </a>
             <a href="https://www.linkedin.com/in/joseph-lodico-/" target="_blank" class="social-box linkedin">
-                <img src="LinkedInLogo.png" loading="lazy" alt="LinkedIn Logo">
+                <img src="LinkedInLogo.png" alt="LinkedIn Logo">
             </a>
         </div>
     </nav>
     <div class="navbar-spacer"></div>
+    <section id="Home">
+        <div class="title-container">
+            <h1> Joseph Lodico porfolio Page</h1>
 
-    <div class="title-container">
-        <h1> Joseph Lodico porfolio Page</h1>
-
-    </div>
-
-    <hr class="top-hr" />
-    <!-- hr above the centered profile card -->
-    <h1>Home Bio</h1>
-
-    <div class="profile-card">
-        <div class="pfp">
-            <img src="JosephVacation.jpg" loading="lazy" alt="profile" class="profile-pic">
         </div>
-        <section id="Bio" class="Bio-Section">
-            <div class="home-bio">
-                <div class="profile-name">Joseph Rogelio Lodico Suero</div>
-                <div class="profile-minibio">Gameplay & UI Programmer</div>
-                <p> I'm joseph Lodico, I am a Video Game Programming Student, learning How to make games at College
-                    Lasalle.
-                    I am Passionate about Gameplay, and UI Programming. I specialize in Unreal Engine 5 using Blueprints
-                    and C++,
-                    i also have experience with Unity and C#. I also love playing video games, and find it interesting
-                    that i am
-                    making it my passion now.
-                </p>
-                <p>
-                    i am Currently seeking for a Summer 2026 internship.
-                </p>
-                <!-- <h2> My Interests</h2>
-        <p>
-            I played Multiple Games since i was little, A grew up playing Nintendo Games from 
-            the Wii, WiiU, Switch, to now playing Pc games. I played games like: (Fortnite, 
-            Rocket league, Valorant, Couter Strike,Legend of Zelda, Super Mario Odyssey, 
-            It Takes Two,etc...). Which is why i was interested in taking this program 
-            at Lasalle College to learn how to make games myself and what inspired me 
-            the most is the amount of creativity people put to bring these games to life. 
-        </p> -->
+        <hr class="top-hr" />
+        <!-- hr above the centered profile card -->
+        <h1>Home Bio</h1>
+
+        <div class="profile-card">
+            <div class="pfp">
+                <img src="JosephVacation.jpg" alt="profile" class="profile-pic">
             </div>
-    </div>
+            <section id="Bio" class="Bio-Section">
+                <div class="home-bio">
+                    <div class="profile-name">Joseph Rogelio Lodico Suero</div>
+                    <div class="profile-minibio">Gameplay & UI Programmer</div>
+                    <p> I'm joseph Lodico, I am a Video Game Programming Student, learning How to make games at College
+                        Lasalle.
+                        I am Passionate about Gameplay, and UI Programming. I specialize in Unreal Engine 5 using
+                        Blueprints
+                        and C++,
+                        i also have experience with Unity and C#. I also love playing video games, and find it
+                        interesting
+                        that i am
+                        making it my passion now.
+                    </p>
+                    <p>
+                        i am Currently seeking for a Summer 2026 internship, i'm determined to grow as a game developer
+                        and expand my game development knowledge.
+                    </p>
+                </div>
+        </div>
     </section>
     <hr class="section-divider">
-    <h1 id="Education">Education</h1>
-    <div class="Education-section">
-        <div class="HighSchool-card">
-            <h1> Lester B Peason - Montreal, QC</h1>
-            <h4>Secondary School Diploma </h4>
-            <p> August 2018 - 2023</p>
-        </div>
-        <div class="Lasalle-card">
-            <h1> College lasalle - Montreal, QC</h1>
-            <h4>Diploma of college studies(DEC) in Game Programming </h4>
-            <p> August 2023 - Present</p>
-        </div>
-        <!-- the Snapchat-avatar Section -->
-        <div class="avatar-section">
-            <div class="snapchat-avatar">
-                <img src="MyAvatar.png" loading="lazy" alt="Snapchat Avatar">
+    <!-- -----------------------------------My Education SECTION -------------------------- -->
+    <section id="Education">
+        <h1>Education</h1>
+        <div class="Education-section">
+            <div class="HighSchool-card">
+                <h1> Lester B Peason - Montreal, QC</h1>
+                <h4>Secondary School Diploma </h4>
+                <p> August 2018 - 2023</p>
             </div>
-        </div>
-    </div>
-
-
-
-    <hr class="section-divider">
-    <!-- the Experience Section -->
-    <div class="experience-section">
-        <h1 id="MyExperience"> My Experiences/Skills</h1>
-        <div class="experience-columns">
-
-            <!-- Column #1 -->
-            <div class="experience-category">
-                <h1> My Coding Experience</h1>
-                <div class="experience-container">
-                    <div class="experience-box">HTML</div>
-                    <div class="experience-box">CSS</div>
-                    <div class="experience-box">JavaScript</div>
-                    <div class="experience-box">C#</div>
-                    <div class="experience-box">C++</div>
-                    <div class="experience-box">Java</div>
-                </div>
+            <div class="Lasalle-card">
+                <h1> College lasalle - Montreal, QC</h1>
+                <h4>Diploma of college studies(DEC) in Game Programming </h4>
+                <p> August 2023 - Present</p>
             </div>
-            <!-- Column #2 -->
-            <div class="experience-category">
-                <h1> My Engine Experience</h1>
-                <div class="experience-container">
-                    <div class="experience-box">Blueprint Scripting</div>
-                    <div class="experience-box">Unity</div>
-                    <div class="experience-box">Unreal Engine</div>
-                    <div class="experience-box">Blender</div>
-                </div>
-            </div>
-            <!-- Column #3 -->
-            <div class="experience-category">
-                <h1>Other Tools</h1>
-                <div class="experience-container">
-                    <div class="experience-box">Perforce</div>
-                    <div class="experience-box">Git</div>
-                    <div class="experience-box">Azure DevOps</div>
-                    <div class="experience-box">Git Bash</div>
+            <!-- the Snapchat-avatar Section -->
+            <div class="avatar-section">
+                <div class="snapchat-avatar">
+                    <img src="MyAvatar.png" alt="Snapchat Avatar">
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- here is my Contact Section -->
-    <hr class="section-divider">
-    <section id="contact" class="contact-section">
-        <h1 id="Contact">Contact</h1>
-        <p> Please fill out the form below to get in Contact with me</p>
-
-        <form class="contact-form" action="https://formsubmit.co/josephl2020@hotmail.com" method="POST">
-            <input type="text" name="name" placeholder="Name" Required>
-            <input type="email" name="email" placeholder="Email" Required>
-            <textarea name="message" rows="5" placeholder="Message" Required></textarea>
-
-            <input type="hidden" name="_captcha" value="false">
-
-            <button type="submit" class="sendMessage-btn"> Send Message</button>
-        </form>
     </section>
+    <hr class="section-divider">
+
+    <!-- -------------------------------My Experience SECTION------------------->
+    <section id="MyExperience">
+        <h1>My Experiences/Skills</h1>
+        <div class="experience-section">
+            <div class="experience-columns">
+
+                <!-- Column #1 -->
+                <div class="experience-category">
+                    <h1> My Coding Experience</h1>
+                    <div class="experience-container">
+                        <div class="experience-box">HTML</div>
+                        <div class="experience-box">CSS</div>
+                        <div class="experience-box">JavaScript</div>
+                        <div class="experience-box">C#</div>
+                        <div class="experience-box">C++</div>
+                        <div class="experience-box">Java</div>
+                    </div>
+                </div>
+                <!-- Column #2 -->
+                <div class="experience-category">
+                    <h1> My Engine Experience</h1>
+                    <div class="experience-container">
+                        <div class="experience-box">Blueprint Scripting</div>
+                        <div class="experience-box">Unity</div>
+                        <div class="experience-box">Unreal Engine</div>
+                        <div class="experience-box">Blender</div>
+                    </div>
+                </div>
+                <!-- Column #3 -->
+                <div class="experience-category">
+                    <h1>Other Tools</h1>
+                    <div class="experience-container">
+                        <div class="experience-box">Perforce</div>
+                        <div class="experience-box">Git</div>
+                        <div class="experience-box">Azure DevOps</div>
+                        <div class="experience-box">Git Bash</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+    <!------------------------------- My Contact SECTION ----------------------------->
+    <section id="Contact">
+        <div class="contact-section">
+            <h1>Contact</h1>
+            <p> Please fill out the form below to get in Contact with me</p>
+
+            <form class="contact-form" action="https://formsubmit.co/josephl2020@hotmail.com" method="POST">
+                <input type="text" name="name" placeholder="Name" Required>
+                <input type="email" name="email" placeholder="Email" Required>
+                <textarea name="message" rows="5" placeholder="Message" Required></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit" class="sendMessage-btn"> Send Message</button>
+            </form>
+        </div>
+    </section>
+    <hr class="section-divider">
+    <hr class="section-divider">
+    <hr class="section-divider">
     <script src="index.js"></script>
 </body>
 

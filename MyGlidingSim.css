@@ -105,7 +105,7 @@
   }
 
 
-  /* --------------------------------------MyGlidingSym Info Section Style--------------------------------------------------------- */
+  /* --------------------------------------MyGlidingSym Description and Project Info Section Style--------------------------------------------------------- */
   .MGSInfo-card {
       flex: 1;
       max-width: 50%;
@@ -238,7 +238,7 @@
       font-size: 30px;
   }
 
-  /* --------------------------------------MyGlidingSym Level Section Style--------------------------------------------------------- */
+  /* --------------------------------------MyGlidingSym Level 1 Section Style--------------------------------------------------------- */
   .MGSLvl1Design-card {
       display: flex;
       flex-direction: flex;
@@ -401,125 +401,182 @@
       text-shadow: 1px 1px 2px silver;
       font-size: 30px;
   }
+  
+/* ---------------------------------- MOBILE + SMALL WINDOW (600px) ------------------------------- */
+@media (max-width: 600px) {
 
-  /* ---------------------------(Iphone 14 pro Max, Iphone 13,etc) SCREEN Responsive------------------------------------ */
-  @media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 10px;
+        text-align: center;
+    }
 
-      /* ----------- NAVBAR ----------- */
-      .navbar {
-          flex-direction: column;
-          height: auto;
-          padding: 30px 20px;
-          gap: 12px;
-          text-align: center;
-      }
+    .navbar-right {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 
-      .navbar-right {
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 10px;
-      }
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 
-      .nav-btn {
-          padding: 6px 10px;
-          font-size: 12px;
-      }
+    /* Back arrow adjusts */
+    .arrow-btn-left {
+        top: 10px;
+        left: 10px;
+        font-size: 18px;
+    }
 
-      .arrow-btn-left {
-          top: 10px;
-          left: 20px;
-          font-size: 20px;
-      }
+    /* CONTENT STACKS CLEANLY */
+    .MGSVid-section,
+    .MGSLogo-section,
+    .GSLevel1-section,
+    .GSLevel2-section,
+    .Checkpoint-section {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
 
-      /* ----------- HEADERS ----------- */
-      h1,
-      h2 {
-          font-size: 26px;
-          margin-bottom: 50px;
-          text-align: center;
-      }
+    /* CARDS */
+    .MGSInfo-card,
+    .MGSLogo-card,
+    .MGSLvl1Design-card,
+    .MGSLvl2Design-card,
+    .MGSCheckpoint-card {
+        width: 90%;
+        padding: 18px;
+        margin-bottom: 25px;
+    }
 
-      /* ----------- UNIVERSAL IMAGE FIX ----------- */
-      img,
-      video {
-          max-width: 100%;
-          height: auto;
-      }
+    /* IMAGES */
+    .MGSvideo-video,
+    .MGSLogo-image,
+    .Level1-image,
+    .Level2-image,
+    .MGSCheckpoint-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-width: 2px;
+         margin-bottom: 25px;
+    }
 
-      /* ----------- MAIN CARD FIXES ----------- */
-      .MGSInfo-card,
-      .MGSLogo-card,
-      .MGSLvl1Design-card,
-      .MGSLvl2Design-card,
-      .MGSCheckpoint-card {
-          width: 90%;
-          padding: 20px;
-          height: auto;
-          margin: 0 auto;
-          margin-bottom: 10px;
-      }
+    /* TEXT RESIZING */
+    .MGSGame-description,
+    .MGSLogo-description,
+    .GSLevel1-description,
+    .GSLevel2-description,
+    .MGSCheckpoint-description {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
 
-      /* ----------- ALL SECTION LAYOUTS ----------- */
-      .info-section,
-      .MGSLogo-section,
-      .GSLevel1-section,
-      .GSLevel2-section,
-      .Checkpoint-section {
-          flex-direction: column;
-          width: 100%;
-          max-width: 100%;
-          margin: 0 auto;
-          gap: 20px;
-          padding: 0 10px;
-      }
+    .MGSGame-description h2,
+    .MGSLogo-description h2,
+    .GSLevel1-description h2,
+    .GSLevel2-description h2,
+    .MGSCheckpoint-description h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 
-      /* ---------- ALL IMAGES INSIDE SECTIONS ---------- */
-      .video-image,
-      .game-image,
-      .MGSLogo-image,
-      .Level1-image,
-      .Level2-image,
-      .MGSCheckpoint-image {
-          width: 95%;
-          height: auto;
-          max-height: 350px;
-          object-fit: cover;
-          margin: 0 auto;
-          margin-bottom: 10px;
-      }
+    /* DIVIDER spacing */
+    .section-divider,
+    .top-hr {
+        margin: 35px auto;
+    }
+}
 
-      /* ----------- ALL DESCRIPTIONS ----------- */
-      .GSGame-description,
-      .MGSLogo-description,
-      .GSLevel1-description,
-      .GSLevel2-description,
-      .MGSCheckpoint-description {
-          font-size: 16px;
-          line-height: 1.4;
-          margin-bottom: 20px;
-          text-align: center;
-          padding: 0 10px;
-      }
+  /* --------------------------- DESKTOP RESPONSIVE  (1200px) ------------------------- */
+@media (max-width: 1200px) {
 
-      /* Title inside text blocks */
-      .GSGame-description h2,
-      .MGSLogo-description h2,
-      .GSLevel1-description h2,
-      .GSLevel2-description h2,
-      .MGSCheckpoint-description h2 {
-          font-size: 22px;
-          margin-bottom: 15px;
-          text-align: center;
-      }
+    /* NAVBAR fixes */
+    .navbar {
+        height: auto;
+        padding: 20px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 
-      /* ----------- DIVIDERS ----------- */
-      .section-divider,
-      .top-hr {
-          margin: 40px auto 30px auto;
-      }
-
-      /* Remove giant bottom padding so content fits nicer */
-      body {
-          padding-top: 20px;
-      }
+    .navbar-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .navbar-spacer {
+      height: 180px;
+      /* same height as navbar to prevent content overlap */
   }
+
+    .arrow-btn-left {
+        top: 15px;
+        left: 15px;
+        z-index: 2000;
+    }
+
+    /* ALL 2-column sections become 1-column */
+    .MGSVid-section,
+    .MGSLogo-section,
+    .GSLevel1-section,
+    .GSLevel2-section,
+    .Checkpoint-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    /* Cards shrink properly */
+    .MGSInfo-card,
+    .MGSLogo-card,
+    .MGSLvl1Design-card,
+    .MGSLvl2Design-card,
+    .MGSCheckpoint-card {
+        width: 95%;
+        max-width: 950px;
+        margin: 0 auto 40px -10px;
+    }
+
+    /* Images resize */
+    .MGSvideo-video,
+    .MGSLogo-image,
+    .Level1-image,
+    .Level2-image,
+    .MGSCheckpoint-image {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    /* Text resizes smoothly */
+    .MGSGame-description,
+    .MGSLogo-description,
+    .GSLevel1-description,
+    .GSLevel2-description,
+    .MGSCheckpoint-description {
+        font-size: 20px;
+        line-height: 1.4;
+        padding: 0 20px;
+    }
+
+    .MGSGame-description h2,
+    .MGSLogo-description h2,
+    .GSLevel1-description h2,
+    .GSLevel2-description h2,
+    .MGSCheckpoint-description h2 {
+        font-size: 26px;
+    }
+}

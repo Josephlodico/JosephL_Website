@@ -90,6 +90,7 @@ h2 {
     color: white;
     font-weight: bold;
 }
+
 /* --------------------------------------Description/Project Info Section (video) Style and layout--------------------------------------------------------- */
 .GGVidDesign-card {
     flex: 1;
@@ -100,7 +101,7 @@ h2 {
     width: 100%;
     padding: 30px;
     border-radius: 20px;
-    margin-bottom:70px;
+    margin-bottom: 70px;
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
@@ -112,6 +113,7 @@ h2 {
     max-width: 1600px;
     margin: 0 auto;
 }
+
 /* Video on Top */
 .GG-Video {
     width: 100%;
@@ -120,12 +122,15 @@ h2 {
     border: 2px solid black;
     box-shadow: 0 0 10px black;
 }
-.GGvideo-box{
-width: 100%;
-display: flex;
-justify-content: center;
-margin-bottom: 40px; /* Some Spacing*/
+
+.GGvideo-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    /* Some Spacing*/
 }
+
 /* Video on Top */
 /* ------------------ */
 .GGVid-description {
@@ -144,6 +149,7 @@ margin-bottom: 40px; /* Some Spacing*/
     text-shadow: 2px 2px 2px black;
     font-size: 30px;
 }
+
 .GGproject-info-list {
     list-style: none;
     padding: 0;
@@ -153,15 +159,17 @@ margin-bottom: 40px; /* Some Spacing*/
     font-size: 22px;
     line-height: 1.6;
     text-shadow: 2px 2px 2px black;
-  }
-  .GGproject-info-list li{
+}
+
+.GGproject-info-list li {
     margin-bottom: 5px;
-  }
-  .GGproject-info-list strong{
+}
+
+.GGproject-info-list strong {
     color: white;
     font-weight: 900;
     text-shadow: 2px 2px 2px black;
-  }
+}
 
 /* -------------------------------------GUNGAME Info Section-------------------------------- */
 .info-section {
@@ -200,4 +208,239 @@ margin-bottom: 40px; /* Some Spacing*/
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px black;
     font-size: 28px;
+}
+
+/* ---------- DESKTOP → TABLET RESPONSIVE FIX (1200px) ---------- */
+@media (max-width: 1200px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar-spacer {
+        height: 180px;
+        /* same height as navbar to prevent content overlap */
+    }
+
+    .arrow-btn-left {
+        top: 15px;
+        left: 15px;
+        z-index: 2000;
+    }
+
+    /* GUNGAME VIDEO SECTION → 1 column */
+    .GGVid-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .GGVidDesign-card {
+        width: 90%;
+        max-width: 950px;
+        padding: 20px;
+    }
+
+    /* Images resize */
+    .GG-Video {
+        width: 100%;
+        max-height: 520px;
+        object-fit: cover;
+    }
+
+    /* Text */
+    .GGVid-description {
+        font-size: 22px;
+        line-height: 1.4;
+        padding: 0 20px;
+    }
+
+    .GGVid-description h2 {
+        font-size: 28px;
+    }
+
+    /* INFO SECTION → 1 column */
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .GUNGAME-image {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .GUNGAME-description {
+        font-size: 22px;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .GUNGAME-description h2 {
+        font-size: 28px;
+    }
+}
+
+/* ---------- TABLET RESPONSIVE (768px) ---------- */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 15px;
+        gap: 10px;
+    }
+
+    .nav-btn {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+
+    .navbar-spacer {
+        height: 180px;
+        /* same height as navbar to prevent content overlap */
+    }
+
+    /* Sections stack */
+    .GGVid-section,
+    .info-section {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+
+    /* Cards */
+    .GGVidDesign-card {
+        width: 95%;
+        padding: 18px;
+    }
+
+    /* Images */
+    .GG-Video,
+    .GUNGAME-image {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+
+    /* Text */
+    .GGVid-description,
+    .GUNGAME-description {
+        font-size: 18px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .GGVid-description h2,
+    .GUNGAME-description h2 {
+        font-size: 24px;
+    }
+
+    /* Divider */
+    .section-divider,
+    .top-hr {
+        margin: 40px auto;
+    }
+}
+
+/* ---------- MOBILE RESPONSIVE (480px) ---------- */
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 25px 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbar-spacer {
+        height: 80px;
+        /* same height as navbar to prevent content overlap */
+    }
+
+    .arrow-btn-left {
+        top: 10px;
+        left: 12px;
+        font-size: 18px;
+    }
+
+    /* Titles */
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Cards */
+    .GGVidDesign-card {
+        width: 95%;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* Sections vertical */
+    .GGVid-section,
+    .info-section {
+        flex-direction: column;
+        max-width: 95%;
+        gap: 18px;
+    }
+
+    /* Images */
+    .GG-Video,
+    .GUNGAME-image {
+        width: 100%;
+        max-height: 230px;
+        object-fit: cover;
+    }
+
+    /* Text */
+    .GGVid-description,
+    .GUNGAME-description {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .GGVid-description h2,
+    .GUNGAME-description h2 {
+        font-size: 20px;
+    }
+
+    /* Divider fix */
+    .section-divider,
+    .top-hr {
+        margin: 35px auto;
+    }
+
+    body {
+        padding-top: 0px;
+    }
 }

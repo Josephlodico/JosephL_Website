@@ -1,5 +1,5 @@
 // gets the current page URL
-const sections = document.querySelectorAll("section, h1[id]");
+const sections = document.querySelectorAll("section");
 const navlinks = document.querySelectorAll(".navbar a");
 
 function activateSection(){
@@ -15,7 +15,7 @@ sections.forEach(section => {
         if (scrollPos >= top && scrollPos < top + height){
         navlinks.forEach(link => link.classList.remove("active-page"));
 
-        const activeLink = document.querySelector(`.navbar a[href="#${id}]`);
+        const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
         if (activeLink) activeLink.classList.add("active-page");
     }  
     });
