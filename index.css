@@ -318,47 +318,7 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* HighSchool FlexBox Card */
-.HighSchool-card {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    border: 4px solid #1e0f3f;
-    background: rgb(41, 41, 40);
-    border-radius: 20px;
-    padding: 25px;
-    width: 440px;
-    height: auto;
-    max-width: 500px;
-    margin-left: 50px;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
-}
 
-.HighSchool-card h1 {
-    color: white;
-    text-shadow: 10px 10px 10px black;
-}
-
-.HighSchool-card h4 {
-    font-weight: bold;
-    font-size: auto;
-    color: white;
-    text-shadow: 10px 10px 10px black;
-}
-
-.HighSchool-card p {
-    align-items: left;
-    text-shadow: 10px 10px 10px black;
-    text-align: left;
-}
-
-.HighSchool-card:hover {
-    transform: scale(1.10);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 
 /* -------------------------------Experience Section (little boxes)---------------------------------------------- */
