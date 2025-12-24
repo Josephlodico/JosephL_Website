@@ -174,7 +174,7 @@ margin-bottom: 40px; /* Some Spacing*/
 
 
 /* --------------------------------------LeapCity 2 Level 1 Design Section--------------------------*/
-.LC2LvlDesign-card {
+.LC2Lvl1-card {
     display: flex;
     flex-direction: flex;
     text-align: left;
@@ -190,7 +190,7 @@ margin-bottom: 40px; /* Some Spacing*/
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.LC2level-section {
+.LC2level1-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -227,7 +227,90 @@ margin-bottom: 40px; /* Some Spacing*/
     text-shadow: 1px 1px 2px black;
     font-size: 30px;
 }
+/* ------------------------------------LeapCity2 Level 2 Image -----------------------------*/
+.LC2Lvl2-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid white;
+    background: rgb(209, 76, 83);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px white;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
 
+.LC2level2-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+    padding: 0 auto;
+}
+/* ------------------------------------LeapCity2 Level 2 Image -----------------------------*/
+.LC2Lvl3-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid white;
+    background: rgb(209, 76, 83);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px white;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.LC2level3-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+    padding: 0 auto;
+}
+/* ------------------------------------LeapCity2 Level 2 Image -----------------------------*/
+.LC2Lvl4-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid white;
+    background: rgb(209, 76, 83);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px white;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.LC2level4-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+    padding: 0 auto;
+}
 
 /* ------------------------------- DESKTOP RESPONSIVE (1200px) ----------------------- */
 @media (max-width: 1200px) {
