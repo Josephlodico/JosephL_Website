@@ -99,6 +99,11 @@ h2 {
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
+footer{
+    text-align: center;
+    color: yellow;
+    margin-top: 50px;
+}
 /* ------------SpeedRacers Description, Project Info Section, and (video) Style and layout--------------------------------------------------------- */
 .SRVidDesign-card {
     flex: 1;

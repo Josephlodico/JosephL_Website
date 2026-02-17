@@ -103,6 +103,12 @@
       margin: 60px auto 40px auto;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   }
+  footer{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    margin-top: 50px;
+  }
 
 
   /* --------------------------------------MyGlidingSym Description and Project Info Section Style--------------------------------------------------------- */

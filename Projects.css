@@ -161,6 +161,11 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
 
 /* -------------------------------------GameLogo Container Placement-------------------------------------------- */
 .section-header {
