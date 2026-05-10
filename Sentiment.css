@@ -1,0 +1,179 @@
+/* --------------------------------------Main Page Style--------------------------------------------------------- */
+/* Navigation Bar for better Navigation of pages */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #3f362f, #5f4f3f);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+    /* ensures navbar stays on top of everything */
+}
+
+.navbar-right {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-spacer {
+    height: 80px;
+    /* same height as navbar to prevent content overlap */
+}
+
+.arrow-btn:hover {
+    background: silver;
+    transform: translateX(-5px);
+}
+
+span {
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    background: rgb(39, 27, 21);
+    background-size: cover;
+    display: block;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+h1,
+h2 {
+    color: rgb(27, 21, 18);
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.arrow-btn-left {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    color: rgb(141, 109, 94);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3 ease, transform 0.2 ease;
+    text-shadow: 1px 1px 1px black;
+}
+
+.arrow-btn-left:hover {
+    background: rgba(255, 255, 255, 0.711);
+    transform: translateX(-5px);
+}
+
+.flipped {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.arrow-btn-left span {
+    color: rgb(39, 27, 21);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.section-divider,
+.top-hr {
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(107, 88, 79), #30251d, rgb(134, 114, 95));
+    margin: 60px auto 40px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+footer{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 50px;
+}
+/* --------------------------------------LeapCity 2 Video Description/Project Info--------------------------*/
+.SentimentVidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: rgb(97, 73, 59);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.SentimentVid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.ST-video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.Sentimentvideo-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.SentimentGame-description {
+    flex: 1;
+    color: black;
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px black;
+}
+
+.SentimentGame-description h2 {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 30px;
+}
+.Sentimentproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: black;
+    font-size: 22px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 2px black;
+  }
+  .Sentimentproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .Sentimentproject-info-list strong{
+    color: black;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+  }
