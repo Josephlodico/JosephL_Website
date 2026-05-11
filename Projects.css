@@ -638,10 +638,10 @@ footer{
 }
 
 .Sentimentitch-btn:hover {
-    background: rgb(105, 75, 50);
-    color: white(45, 78, 52);
+    background: rgb(20, 20, 20);
+    color: rgb(71, 24, 24);
+    border: solid rgb(71, 24, 24);
     border-radius: 10px;
-    border: 2px solid black;
     transform: scale(1.05);
     text-shadow: 1px 1px 1px black;
 }
@@ -659,8 +659,9 @@ footer{
 }
 
 .Sentimentmoreinfo-btn:hover {
-    background: rgb(105, 75, 50);
-    color: white;
+    background: rgb(20, 20, 20);
+    color: rgb(71, 24, 24);
+    border: solid rgb(71, 24, 24);
     transform: scale(1.05);
     text-shadow: 1px 1px 1px black;
 }
