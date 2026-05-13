@@ -589,7 +589,7 @@ footer{
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-/* LeapCity2 logo Image */
+/* Sentiment logo Image */
 .Sentimentlogo {
     width: 100%;
     height: 350px;
@@ -599,7 +599,7 @@ footer{
     margin-right: 5px;
 }
 
-/* LeapCity2 Description Text */
+/* Sentiment Description Text */
 .SentimentLogo-text {
     text-align: left;
     margin-bottom: 50px;
@@ -665,6 +665,104 @@ footer{
     transform: scale(1.05);
     text-shadow: 1px 1px 1px black;
 }
+
+/* -------------------------------------ChessMate Project Logo----------------------------------------- */
+/* ChessMate Card */
+.ChessMateLogo-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 4px solid rgb(46, 14, 14);
+    background: rgb(88, 31, 9);
+    border-radius: 20px;
+    padding: 25px;
+    width: 550px;
+    height: 750px;
+    max-width: 1000px;
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+/* ChessMate logo Image */
+.ChessMatelogo {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* ChessMate Description Text */
+.ChessMateLogo-text {
+    text-align: left;
+    margin-bottom: 50px;
+    color: white;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+    line-height: 1.5;
+}
+
+.ChessMateLogo-text h2 {
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.2px white;
+}
+
+.ChessMateLogo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 15px rgb(46, 14, 14);
+}
+
+/* ChessMate Github btn design */
+.ChessMateitch-btn {
+
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: rgb(71, 24, 24);
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.3 ease;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.ChessMateitch-btn:hover {
+    background: rgb(83, 53, 39);
+    color:  rgb(71, 24, 24);
+    border: solid  rgb(46, 14, 14);
+    border-radius: 10px;
+    transform: scale(1.05);
+    -webkit-text-stroke: 0.5px rgb(46, 14, 14);
+}
+
+.ChessMatemoreinfo-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: rgb(71, 24, 24);
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.3 ease;
+    -webkit-text-stroke: 0.5px ;
+    margin-left: 70px;
+}
+
+.ChessMatemoreinfo-btn:hover {
+    background: rgb(83, 53, 39);
+    color: rgb(71, 24, 24);
+    border: solid rgb(46, 14, 14);
+    transform: scale(1.05);
+    -webkit-text-stroke: 0.5px rgb(46, 14, 14);
+}
+
 /* -------------------------------------GameLogo Container-------------------------------------------- */
 
 /* -------------------------------------GUNGAME-LOGO----------------------------------------- */
