@@ -37,7 +37,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 | Project | Engine | Role | Team | Year |
 |---------|--------|------|------|------|
 | **Sentiment** | Unreal Engine 5 | 3D Artist, UI Programmer | 8 | 2026 |
-| **ChessMate** | Unreal Engine 5 | 3D Artist, UI Programmer | 3 | 2025–2026 |
+| **ChessMate** | Unreal Engine 5 | 3D Artist, UI Programmer | 3 | 2026 |
 | **SpeedRacers** | Unreal Engine 5 | Core Development | 2 | 2025 |
 | **LeapCity2** | Unreal Engine 5 | UI Programmer, Sound Designer | 3 | 2025 |
 | **InfiniteTrigger** | Unreal Engine 5 | Gameplay, Animations | 3 | 2025 |
