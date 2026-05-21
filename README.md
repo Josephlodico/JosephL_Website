@@ -1,3 +1,4 @@
+
 # 🎮 Joseph Lodico — Portfolio Website
 
 A personal portfolio and game dev showcase built with vanilla HTML, CSS, and JavaScript. Features a home page, project gallery, and individual detail pages for each game and coding project.
@@ -8,12 +9,14 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 
 | Page | Description |
 |------|-------------|
-| `index.html` | Main portfolio — bio, featured projects, education, skills & contact |
+| `index.html` | Main portfolio — bio, featured projects, education, experience & contact |
 | `MyProjects.html` | Full project gallery (game + coding projects) |
 | `SpeedRacers.html` | Kart racing game detail page |
 | `LeapCity2.html` | Parkour platformer detail page |
 | `InfiniteTrigger.html` | Zombie wave shooter detail page |
 | `MyGlidingSim.html` | Gliding simulator detail page |
+| `ChessMate.html` | 3D chess game detail page |
+| `Sentiment.html` | Horror game detail page |
 | `GUNGAME.html` | C# console game detail page |
 | `ShopSim.html` | C++ shop simulator detail page |
 
@@ -22,7 +25,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 ## 🛠️ Built With
 
 - **HTML5**
-- **CSS3** — Flexbox, responsive media queries (480px / 768px / 900px / 1200px)
+- **CSS3** — Flexbox, responsive media queries (480px / 768px / 900px / 1024px / 1200px)
 - **JavaScript** — Scroll-based active nav, smooth fade-in transitions
 
 ---
@@ -33,8 +36,10 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 
 | Project | Engine | Role | Team | Year |
 |---------|--------|------|------|------|
-| **SpeedRacers** | Unreal Engine 5 | Core Development | Solo | 2025 |
-| **LeapCity2** | Unreal Engine 5 | UI Programmer, Sound Designer | 3 | Present |
+| **Sentiment** | Unreal Engine 5 | 3D Artist, UI Programmer | 8 | 2026 |
+| **ChessMate** | Unreal Engine 5 | 3D Artist, UI Programmer | 3 | 2025–2026 |
+| **SpeedRacers** | Unreal Engine 5 | Core Development | 2 | 2025 |
+| **LeapCity2** | Unreal Engine 5 | UI Programmer, Sound Designer | 3 | 2025 |
 | **InfiniteTrigger** | Unreal Engine 5 | Gameplay, Animations | 3 | 2025 |
 | **MyGlidingSim** | Unreal Engine 5 | Gameplay, UI, Level Design | Solo | 2025 |
 
@@ -44,6 +49,15 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 |---------|----------|------|------|------|
 | **GUNGAME** | C# (Visual Studio 2022) | Programmer | 2 | 2024 |
 | **ShopSimulator** | C++ (Visual Studio 2022) | Minigame Programmer | 4 | 2025 |
+
+---
+
+## 🏆 Awards
+
+| Award | Project | Event |
+|-------|---------|-------|
+| 🥇 Best Audio | Sentiment | Behaviour Interactive Game Jam 2026 |
+| 🥇 Participant's Pick | Sentiment | Behaviour Interactive Game Jam 2026 |
 
 ---
 
@@ -76,20 +90,23 @@ Then visit `http://localhost:5501` in your browser.
 
 ```
 JosephL_Website/
-├── index.html               # Main portfolio page
-├── MyProjects.html          # All projects gallery
-├── SpeedRacers.html/.css    # SpeedRacers detail
-├── LeapCity2.html/.css      # LeapCity2 detail
-├── InfiniteTrigger.html/.css
-├── MyGlidingSim.html/.css
-├── GUNGAME.html/.css
-├── ShopSim.html/.css
-├── Projects.css             # Shared projects page styles
-├── Projects.js              # Scroll + active nav logic
-├── index.css                # Main page styles
-├── index.js                 # Main page scroll logic
-├── images/                  # Game logos, screenshots, favicons
-└── videos/                  # Gameplay footage
+├── index.html                  # Main portfolio page
+├── MyProjects.html             # All projects gallery
+├── SpeedRacers.html/.css       # SpeedRacers detail
+├── LeapCity2.html/.css         # LeapCity2 detail
+├── InfiniteTrigger.html/.css   # InfiniteTrigger detail
+├── MyGlidingSim.html/.css      # MyGlidingSim detail
+├── ChessMate.html/.css         # ChessMate detail
+├── Sentiment.html/.css         # Sentiment detail
+├── GUNGAME.html/.css           # GUNGAME detail
+├── ShopSim.html/.css           # ShopSimulator detail
+├── Projects.css                # Shared projects page styles
+├── Projects.js                 # Scroll + active nav logic
+├── index.css                   # Main page styles
+├── index.js                    # Main page scroll logic
+├── CV/                         # Downloadable CV PDF
+├── images/                     # Game logos, screenshots, favicons
+└── videos/                     # Gameplay footage
 ```
 
 ---
@@ -105,9 +122,15 @@ JosephL_Website/
 
 ---
 
+## 💼 Experience
+
+Currently completing a **Summer 2026 internship at Adda Tech Systems Inc.**, gaining professional development experience and growing technical and collaborative skills.
+
+---
+
 ## 🔗 Links
 
-- 🌍 **Itch.io:** [josephlodico.itch.io](https://josephlodico.itch.io/)
+- 🎮 **Itch.io:** [josephlodico.itch.io](https://josephlodico.itch.io/)
 - 💼 **LinkedIn:** [linkedin.com/in/joseph-lodico-](https://www.linkedin.com/in/joseph-lodico-/)
 - 🐙 **GitHub:** [github.com/Josephlodico](https://github.com/Josephlodico)
 
