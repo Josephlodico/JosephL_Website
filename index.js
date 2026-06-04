@@ -4,6 +4,7 @@ const navlinks = document.querySelectorAll(".navbar a");
 
 function activateSection() {
     let scrollPos = window.scrollY + 120;
+    let activeId = null;
 
     sections.forEach(section => {
         const id = section.getAttribute("id");
@@ -13,12 +14,16 @@ function activateSection() {
         const height = section.offsetHeight;
 
         if (scrollPos >= top && scrollPos < top + height) {
-            navlinks.forEach(link => link.classList.remove("active-page"));
-
-            const activeLink = document.querySelector(`.navbar a[href="#${id}"]`);
-            if (activeLink) activeLink.classList.add("active-page");
+            const matchingLink = document.querySelector(`.navbar a[href="#${id}"]`);
+            if (matchingLink) activeId = id;
         }
     });
+
+    navlinks.forEach(link => link.classList.remove("active-page"));
+    if (activeId) {
+        const activeLink = document.querySelector(`.navbar a[href="#${activeId}"]`);
+        if (activeLink) activeLink.classList.add("active-page");
+    }
 }
 
 window.addEventListener("scroll", activateSection);

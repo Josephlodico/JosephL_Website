@@ -25,8 +25,8 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 ## 🛠️ Built With
 
 - **HTML5**
-- **CSS3** — Flexbox, responsive media queries (480px / 768px / 900px / 1024px / 1200px)
-- **JavaScript** — Scroll-based active nav, smooth fade-in transitions
+- **CSS3** — Flexbox, responsive media queries (480px / 768px / 900px / 1024px / 1200px), `scroll-margin-top` for fixed navbar anchor offsets
+- **JavaScript** — Scroll-based active nav highlight (nested-section safe), smooth fade-in transitions
 
 ---
 
@@ -115,8 +115,11 @@ JosephL_Website/
 
 - **Responsive design** — works on mobile, tablet, and desktop
 - **Smooth page fade-in** on load
-- **Active navbar highlighting** based on scroll position
+- **Active navbar highlighting** based on scroll position (nested-section safe)
+- **Anchor scroll offset** — `scroll-margin-top` keeps section titles visible below the fixed navbar
+- **Steel blue nav hover** — consistent accent color matching the site title
 - **Hover overlays** on featured project cards
+- **Inline video autoplay** — all videos use correct `playsinline` for iOS Safari support
 - **Contact form** via FormSubmit
 - **Downloadable CV**
 

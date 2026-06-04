@@ -178,7 +178,7 @@ footer{
 
 /* Hover effect */
 .nav-btn:hover {
-    background: rgb(38, 1, 46);
+    background: rgb(79, 127, 201);
     transform: scale(1.05);
 }
 
@@ -684,6 +684,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: 110px;
+}
+
 .fade-in {
     opacity: 0;
     transform: translate(20px);
@@ -710,6 +714,10 @@ html {
     .navbar-spacer {
         height: 140px;
         /* same height as navbar to prevent content overlap */
+    }
+
+    section {
+        scroll-margin-top: 140px;
     }
 
     .site-title {
@@ -943,5 +951,9 @@ html {
 
     .navbar-spacer {
         height: 190px;
+    }
+
+    section {
+        scroll-margin-top: 190px;
     }
 }

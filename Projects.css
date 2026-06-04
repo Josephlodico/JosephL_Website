@@ -66,7 +66,7 @@
 
 /* Hover effect */
 .nav-btn:hover {
-    background: rgb(38, 1, 46);;
+    background: rgb(79, 127, 201);
     transform: scale(1.05);
 }
 
@@ -161,6 +161,11 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+section {
+    scroll-margin-top: 80px;
+}
+
 footer{
     text-align: center;
     color: white;
@@ -1104,6 +1109,10 @@ footer{
 
     .navbar-spacer {
         height: 180px;
+    }
+
+    section {
+        scroll-margin-top: 180px;
     }
 
     /* PROJECT SECTION */
