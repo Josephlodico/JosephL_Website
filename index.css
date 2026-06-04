@@ -302,6 +302,7 @@ p {
     opacity: 0.9;
 }
 
+/* "Click to Play" text */
 .overlay p:last-child {
     margin-top: 10px;
     color: rgb(79, 127, 201);
