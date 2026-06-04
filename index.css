@@ -188,7 +188,7 @@ footer{
 }
 
 .active-page {
-    background: rgb(38, 1, 46);
+    background: rgb(79, 127, 201);
     color: white;
     border-radius: 10px;
 }
@@ -224,6 +224,7 @@ p {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 10%;
     border: 3px solid black;
     margin-bottom: 10px;
     margin-left: 250px;
@@ -294,8 +295,7 @@ p {
     width: 100%;
     height: 100%;
     display: block;
-    transition: transform 0.4 ease;
-    text-shadow: 10px 10px 10px black;
+    transition: transform 0.4s ease;
 }
 
 .Sentiment-card:hover{
@@ -320,7 +320,6 @@ p {
     height: 100%;
     display: block;
     transition: transform 0.4s ease;
-    text-shadow: 10px 10px 10px black;
 }
 
 .CM-card:hover{
@@ -334,7 +333,6 @@ p {
 /* SpeedRacers Card */
 .SR-card{
     position: relative;
-    gap: 40px;
     width: 500px;
     overflow: hidden;
     border-radius: 40px;
@@ -347,7 +345,6 @@ p {
     height: 100%;
     display: block;
     transition: transform 0.4s ease;
-    text-shadow: 10px 10px 10px black;
 }
 
 .SR-card:hover{
@@ -372,7 +369,6 @@ p {
     height: 100%;
     display: block;
     transition: transform 0.4s ease;
-    text-shadow: 10px 10px 10px black;
 }
 
 .LC2-card:hover{
@@ -397,7 +393,6 @@ p {
     height: 100%;
     display: block;
     transition: transform 0.4s ease;
-    text-shadow: 10px 10px 10px black;
 }
 
 .MGS-card:hover{
@@ -423,7 +418,6 @@ p {
     height: 100%;
     display: block;
     transition: transform 0.4s ease;
-    text-shadow: 10px 10px 10px black;
 }
 
 .IFTG-card:hover{
