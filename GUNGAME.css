@@ -71,14 +71,15 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3 ease, transform 0.2 ease;
+    transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease;
     text-shadow: 1px 1px 1px white;
-
+    padding: 5px 10px;
+    border-radius: 6px;
 }
 
 .arrow-btn-left:hover {
-    background: rgba(255, 255, 255, 0.711);
-    transform: translateX(-5px);
+    background: rgba(180, 180, 180, 0.28);
+    transform: translateX(-4px);
 }
 
 .flipped {
