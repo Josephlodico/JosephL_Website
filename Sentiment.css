@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(135deg, #3f362f, #5f4f3f);
+    background: linear-gradient(135deg, rgb(7, 5, 4), rgb(7, 5, 4));
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: space-between;
@@ -55,29 +55,31 @@ body.loaded {
 
 h1,
 h2 {
-    color: rgb(27, 21, 18);
+    color: rgb(71, 24, 24);
     text-align: center;
     margin-bottom: 50px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 5px 5px 5px black;
 }
 
 .arrow-btn-left {
     position: fixed;
     top: 20px;
     left: 25px;
-    color: rgb(141, 109, 94);
+    color: rgb(71, 24, 24);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 5px 5px 5px black;
     padding: 5px 10px;
     border-radius: 6px;
 }
 
 .arrow-btn-left:hover {
-    background: rgba(190, 145, 100, 0.4);
+    background: rgb(26, 16, 16);
     transform: translateX(-4px);
+    border: solid rgb(71, 24, 24);
+    text-shadow: 5px 5px 5px black;
 }
 
 .flipped {
@@ -86,9 +88,9 @@ h2 {
 }
 
 .arrow-btn-left span {
-    color: rgb(39, 27, 21);
+    color: rgb(71, 24, 24);;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 5px 5px 5px black;
 }
 
 .section-divider,
@@ -97,7 +99,7 @@ h2 {
     height: 3px;
     border: none;
     border-radius: 5px;
-    background: linear-gradient(90deg, rgb(107, 88, 79), #30251d, rgb(134, 114, 95));
+    background: linear-gradient(90deg, rgb(26, 16, 16), rgb(71, 24, 24), rgb(26, 16, 16));
     margin: 60px auto 40px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
@@ -111,7 +113,7 @@ footer{
 .SentimentVidDesign-card {
     flex: 1;
     max-width: 50%;
-    background: rgb(97, 73, 59);
+    background: rgb(26, 16, 16);
     border: 2px solid black;
     box-shadow: 0 0 10px black;
     width: 100%;
@@ -147,18 +149,18 @@ margin-bottom: 40px; /* Some Spacing*/
 /* ------------------ */
 .SentimentGame-description {
     flex: 1;
-    color: black;
+    color: rgb(71, 24, 24);;
     font-size: 25px;
     line-height: 1.5;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 5px 5px 5px black;
 }
 
 .SentimentGame-description h2 {
-    color: black;
+    color: rgb(71, 24, 24);
     font-weight: bold;
     text-align: left;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 5px 5px 5px black;
     font-size: 30px;
 }
 .Sentimentproject-info-list {
@@ -166,16 +168,72 @@ margin-bottom: 40px; /* Some Spacing*/
     padding: 0;
     margin-top: 20px;
     text-align: left;
-    color: black;
+    color: rgb(71, 24, 24);
     font-size: 22px;
     line-height: 1.6;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 5px 5px 5px black;
   }
   .Sentimentproject-info-list li{
     margin-bottom: 5px;
   }
   .Sentimentproject-info-list strong{
-    color: black;
+    color: rgb(71, 24, 24);
     font-weight: 900;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 5px 5px 5px black;
   }
+  /*---------------------Sentiment Logo Info--------------------------*/
+.SLogo-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid rgb(71, 24, 24);
+    background:  rgb(26, 16, 16);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgb(71, 24, 24);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.SLogo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+}
+
+.SLogo-image {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(71, 24, 24);;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgb(71, 24, 24);;
+}
+
+.SLogo-description {
+    flex: 1;
+    margin-bottom: 200px;
+    color: rgb(71, 24, 24);
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 5px 5px 5px black;
+}
+
+.SLogo-description h2 {
+    color: rgb(71, 24, 24);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px black;
+    font-size: 30px;
+}

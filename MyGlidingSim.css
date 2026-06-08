@@ -220,9 +220,10 @@
   }
 
   .MGSLogo-image {
-      width: 600px;
+      width: 550px;
       height: auto;
       border-radius: 10px;
+      margin-left: 50px;
       border: 2px solid white;
       box-shadow: 0 0 10px silver;
   }

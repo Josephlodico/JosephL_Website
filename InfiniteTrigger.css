@@ -183,8 +183,61 @@ footer{
     font-weight: 900;
     text-shadow: 1px 1px 2px black;
 }
+/* --------------------------------------InfiniteTrigger Splash Section-------------------------------------------------------- */
+.IFTGGameSplash-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid black;
+    background: rgb(26, 48, 31);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    margin-bottom: 50px;
+}
 
+.GameSplash-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 40px;
+    gap: 40px;
+    width: 100%;
+    max-width: 1800px;
+}
 
+.GameSplash-image {
+    width: 950px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 50px;
+}
+
+.IFTGSplash-description {
+    flex: 1;
+    margin-bottom: 110px;
+    color: black;
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black;
+}
+
+.IFTGSplash-description h2 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+    font-size: 28px;
+}
 /* --------------------------------------InfiniteTrigger Info/Description Section-------------------------------------------------------- */
 .IFTGAbout-card {
     display: flex;
@@ -232,61 +285,6 @@ footer{
 }
 
 .IFTGAbout-description h2 {
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px black;
-    font-size: 28px;
-}
-
-/* --------------------------------------InfiniteTrigger Splash Section-------------------------------------------------------- */
-.IFTGGameSplash-card {
-    display: flex;
-    flex-direction: flex;
-    text-align: left;
-    align-items: left;
-    border: 2px solid black;
-    background: rgb(26, 48, 31);
-    border-radius: 20px;
-    padding: 25px;
-    width: 950px;
-    height: auto;
-    max-width: 1000px;
-    box-shadow: 0 0 10px black;
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
-}
-
-.GameSplash-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: 40px;
-    gap: 40px;
-    width: 100%;
-    max-width: 1800px;
-    margin-left: 0px;
-}
-
-.GameSplash-image {
-    width: 950px;
-    height: auto;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0 0 10px black;
-}
-
-.IFTGSplash-description {
-    flex: 1;
-    margin-bottom: 110px;
-    color: black;
-    font-size: 24px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 1px black;
-}
-
-.IFTGSplash-description h2 {
     color: black;
     font-weight: bold;
     text-align: center;

@@ -178,3 +178,59 @@ margin-bottom: 40px; /* Some Spacing*/
     font-weight: 900;
     text-shadow: 1px 1px 2px rgb(46, 14, 14);
   }
+  /*---------------------ChessMate Logo Info--------------------------*/
+.CMLogo-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid black;
+    background: rgb(83, 53, 39);;
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.CMLogo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+}
+
+.CMLogo-image {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px black;
+}
+
+.CMLogo-description {
+    flex: 1;
+    margin-bottom: 200px;
+    color: rgb(46, 14, 14);
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgb(46, 14, 14);
+}
+
+.CMLogo-description h2 {
+    color: rgb(46, 14, 14);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgb(46, 14, 14);
+    font-size: 30px;
+}
