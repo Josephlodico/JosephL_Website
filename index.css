@@ -623,11 +623,11 @@ p {
 /* -----------------------------------------Contact Section---------------------------------------------- */
 .contact-section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 40px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     border-radius: 20px;
-    max-width: 700px;
+    max-width: 950px;
     margin: 60px auto;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
@@ -635,53 +635,107 @@ p {
 .contact-section h1 {
     color: white;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 12px;
     text-shadow: 1px 1px 1px black;
 }
 
-.contact-section p {
+.contact-section > p {
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 50px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.85;
 }
 
-/* here is my Contact Form */
-.contact-form {
+/* Two-column inner layout */
+.contact-inner {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Left column: direct contact links */
+.contact-info {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.contact-info h2 {
+    color: white;
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    text-shadow: 1px 1px 1px black;
+}
+
+.contact-link {
+    display: flex;
     align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background 0.2s ease, transform 0.2s ease;
+    word-break: break-all;
+}
+
+.contact-link:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.contact-icon[src] {
+    filter: brightness(0) invert(1);
+}
+
+/* Right column: contact form */
+.contact-form {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    max-width: 500px;
     padding: 14px 16px;
-    border: 2px solid grey;
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    color: black;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
     font-size: 16px;
     outline: none;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: grey;
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: black;
-    background: rgba(250, 250, 255, 0.9);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
 }
-
-/* this is for send Message */
 
 .sendMessage-btn {
     background: linear-gradient(135deg, #444349, #1e0f3f);
@@ -691,13 +745,15 @@ p {
     border-radius: 25px;
     padding: 12px 30px;
     font-size: 16px;
+    cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
 }
 
 .sendMessage-btn:hover {
     background: rgb(139, 66, 138);
-    transform: translate(-3px);
+    transform: translateY(-3px);
     box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.5);
 }
 
@@ -846,14 +902,27 @@ section {
     }
 
     /* CONTACT FORM SECTION*/
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .contact-form {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .contact-form input,
     .contact-form textarea {
         font-size: 14px;
+    }
+
+    .sendMessage-btn {
+        align-self: center;
+        width: 100%;
     }
 
     img {
