@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background: linear-gradient(135deg, rgb(83, 53, 39), rgb(83, 53, 39));
+    background: linear-gradient( 135deg,rgb(151, 96, 71), rgb(151, 96, 71));
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ span {
 }
 
 body {
-    background: rgb(46, 14, 14);
+    background: rgb(71, 24, 24);;
     background-size: cover;
     display: block;
     margin: 0;
@@ -55,17 +55,16 @@ body.loaded {
 
 h1,
 h2 {
-    color: rgb(46, 14, 14);
+    color: white;
     text-align: center;
     margin-bottom: 50px;
-   -webkit-text-stroke: 0.5px rgb(46, 14, 14);
 }
 
 .arrow-btn-left {
     position: fixed;
     top: 20px;
     left: 25px;
-    color: rgb(46, 14, 14);
+    color: rgb(71, 24, 24);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -76,7 +75,8 @@ h2 {
 }
 
 .arrow-btn-left:hover {
-    background: rgba(218, 165, 32, 0.35);
+    background: rgb(71, 24, 24);
+    border: solid  white;
     transform: translateX(-4px);
 }
 
@@ -86,9 +86,9 @@ h2 {
 }
 
 .arrow-btn-left span {
-    color: rgb(46, 14, 14);
+    color: white;
     font-weight: bold;
-    -webkit-text-stroke: 0.5px rgb(46, 14, 14);
+    -webkit-text-stroke: 0.5px white;
 }
 
 .section-divider,
@@ -111,7 +111,7 @@ footer{
 .ChessMateVidDesign-card {
     flex: 1;
     max-width: 50%;
-    background: rgb(83, 53, 39);
+    background: rgb(151, 96, 71);
     border: 2px solid black;
     box-shadow: 0 0 10px black;
     width: 100%;
@@ -185,7 +185,7 @@ margin-bottom: 40px; /* Some Spacing*/
     text-align: left;
     align-items: left;
     border: 2px solid black;
-    background: rgb(83, 53, 39);;
+    background: rgb(151, 96, 71);
     border-radius: 20px;
     padding: 25px;
     width: 950px;

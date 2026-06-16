@@ -125,7 +125,6 @@ h2 {
     color: white;
     text-align: center;
     margin-bottom: 50px;
-    text-shadow: 1px 1px 1px white;
 }
 
 .arrow-btn-left {
@@ -218,7 +217,7 @@ footer{
     width: 500px;
     height: 750px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* my SpeedRacers Video*/
@@ -262,7 +261,7 @@ footer{
     color: purple;
     border-radius: 10px;
     border: 3px solid purple;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px yellow;
 }
 
@@ -281,7 +280,7 @@ footer{
     font-weight: bold;
     color: purple;
     border: 3px solid purple;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px yellow;
     margin-left: 70px;
 }
@@ -309,7 +308,7 @@ footer{
     width: 500px;
     height: 750px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* my Game logo Image */
@@ -355,7 +354,7 @@ footer{
     color: grey;
     border: 3px solid grey;
     border-radius: 10px;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px white;
 }
 
@@ -374,7 +373,7 @@ footer{
     font-weight: bold;
     color: grey;
     border: 3px solid grey;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px white;
     margin-left: 70px;
 }
@@ -403,7 +402,7 @@ footer{
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* my Game logo Image */
@@ -450,7 +449,7 @@ footer{
     font-weight: bold;
     color: black;
     border: 3px solid black;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -469,7 +468,7 @@ footer{
     font-weight: bold;
     color: black;
     border: 3px solid black;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
     margin-left: 70px;
 }
@@ -497,7 +496,7 @@ footer{
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* LeapCity2 logo Image */
@@ -505,7 +504,7 @@ footer{
     width: 100%;
     height: 380px;
     object-fit: cover;
-    border: 4px solid white;
+    border: 2px solid white;
     border-radius: 10px;
     margin-right: 5px;
 }
@@ -544,13 +543,13 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
 }
 
 .LeapCity2itch-btn:hover {
     background: rgb(209, 76, 83);
-    color: white(45, 78, 52);
+    color: white;
     border-radius: 10px;
     border: 2px solid white;
     transform: scale(1.05);
@@ -564,7 +563,7 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
     margin-left: 70px;
 }
@@ -592,7 +591,7 @@ footer{
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Sentiment logo Image */
@@ -602,6 +601,7 @@ footer{
     object-fit: cover;
     border: 2px solid black;
     border-radius: 10px;
+    border: 2px solid white;
     margin-right: 5px;
 }
 
@@ -609,25 +609,25 @@ footer{
 .SentimentLogo-text {
     text-align: left;
     margin-bottom: 50px;
-    color: rgb(71, 24, 24);
+    color: white;
     max-width: 600px;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 0px 0px 0px rgb(71, 24, 24);
+    text-shadow: 5px 5px 5px black;
     line-height: 1.5;
 }
 
 .SentimentLogo-text h2 {
     justify-content: center;
     text-align: center;
-    color: rgb(71, 24, 24);
+    color: white;
     margin-bottom: 20px;
-    text-shadow: 0px 0px 0px rgb(71, 24, 24);
+    text-shadow: 5px 5px 5px black;
 }
 
 .SentimentLogo-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 15px rgb(71, 24, 24);
+    box-shadow: 0 15px 15px white;
 }
 
 /* Sentiment Github btn design */
@@ -639,18 +639,19 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 1px 1px 1px white;
     background: rgb(0, 0, 0);
 }
 
 .Sentimentitch-btn:hover {
-    background: rgb(26, 16, 16);
-    color: rgb(71, 24, 24);
-    border: solid rgb(71, 24, 24);
+    background: rgb(65, 31, 31);
+    color: rgb(156, 31, 31);
+    border: solid rgb(114, 35, 35);
     border-radius: 10px;
     transform: scale(1.05);
     text-shadow: 5px 5px 5px black;
+    -webkit-text-stroke: 0.5px rgb(156, 31, 31);
 }
 
 .Sentimentmoreinfo-btn {
@@ -660,18 +661,19 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 1px 1px 1px white;
     background: rgb(0, 0, 0);
     margin-left: 70px;
 }
 
 .Sentimentmoreinfo-btn:hover {
-    background: rgb(26, 16, 16);
-    color: rgb(71, 24, 24);
-    border: solid rgb(71, 24, 24);
+    background: rgb(65, 31, 31);
+    color: rgb(156, 31, 31);
+    border: solid rgb(114, 35, 35);
     transform: scale(1.05);
     text-shadow: 5px 5px 5px black;
+     -webkit-text-stroke: 0.5px rgb(156, 31, 31);
 }
 
 /* -------------------------------------ChessMate Project Logo----------------------------------------- */
@@ -682,14 +684,14 @@ footer{
     text-align: center;
     align-items: center;
     border: 4px solid rgb(46, 14, 14);
-    background: rgb(88, 31, 9);
+    background: rgb(151, 96, 71);
     border-radius: 20px;
     padding: 25px;
     width: 550px;
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgb(0, 0, 0);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* ChessMate logo Image */
@@ -697,7 +699,7 @@ footer{
     width: 100%;
     height: 350px;
     object-fit: cover;
-    border: 2px solid black;
+    border: 2px solid rgb(71, 24, 24);
     border-radius: 10px;
     margin-right: 5px;
 }
@@ -706,7 +708,7 @@ footer{
 .ChessMateLogo-text {
     text-align: left;
     margin-bottom: 50px;
-    color: white;
+    color: rgb(71, 24, 24);
     max-width: 600px;
     font-size: 20px;
     font-weight: bold;
@@ -717,7 +719,7 @@ footer{
 .ChessMateLogo-text h2 {
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(71, 24, 24);
     margin-bottom: 20px;
     -webkit-text-stroke: 0.5px black;
 }
@@ -734,20 +736,20 @@ footer{
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    color: white;
-    background: rgb(71, 24, 24);
-    border: 2px solid rgb(255, 255, 255);
-    transition: 0.3 ease;
-    -webkit-text-stroke: 0.5px white;
+    color: rgb(71, 24, 24);
+    background: rgb(211, 133, 97);
+    border:solid rgb(46, 14, 14);
+    transition: 0.3s ease;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .ChessMateitch-btn:hover {
-    background: rgb(83, 53, 39);
-    color:  rgb(71, 24, 24);
-    border: solid  rgb(46, 14, 14);
+    background: rgb(71, 24, 24);
+    color:  white;
+    border: solid  white;
     border-radius: 10px;
     transform: scale(1.05);
-    -webkit-text-stroke: 0.5px rgb(46, 14, 14);
+    -webkit-text-stroke: 0.5px white;
 }
 
 .ChessMatemoreinfo-btn {
@@ -755,20 +757,21 @@ footer{
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
-    color: white;
-    background: rgb(71, 24, 24);
-    border: 2px solid rgb(255, 255, 255);
-    transition: 0.3 ease;
-    -webkit-text-stroke: 0.5px ;
+    color: rgb(71, 24, 24);
+    background: rgb(211, 133, 97);
+    border: solid rgb(46, 14, 14);
+    transition: 0.3s ease;
     margin-left: 70px;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .ChessMatemoreinfo-btn:hover {
-    background: rgb(83, 53, 39);
-    color: rgb(71, 24, 24);
-    border: solid rgb(46, 14, 14);
+    background: rgb(71, 24, 24);
+    color: white;
+    border: solid white;
     transform: scale(1.05);
-    -webkit-text-stroke: 0.5px rgb(46, 14, 14);
+    -webkit-text-stroke: 0.5px white;
+    
 }
 
 /* -------------------------------------GameLogo Container-------------------------------------------- */
@@ -789,7 +792,7 @@ footer{
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* my Game logo Image */
@@ -836,13 +839,13 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
 }
 
 .GunGame-btn:hover {
     background: rgb(119, 118, 118);
-    color: white(45, 78, 52);
+    color: white;
     border-radius: 10px;
     border: 2px solid white;
     transform: scale(1.05);
@@ -856,7 +859,7 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
     margin-left: 70px;
 }
@@ -884,7 +887,7 @@ footer{
     height: 750px;
     max-width: 1000px;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* my Game logo Image */
@@ -931,13 +934,13 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
 }
 
 .ShopSim-btn:hover {
     background: rgb(36, 27, 14);
-    color: white(45, 78, 52);
+    color: white;
     border-radius: 10px;
     border: 2px solid white;
     transform: scale(1.05);
@@ -951,7 +954,7 @@ footer{
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     text-shadow: 2px 2px 2px black;
     margin-left: 70px;
 }
