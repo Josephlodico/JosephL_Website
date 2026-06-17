@@ -581,12 +581,13 @@ footer{
 }
 
 .LeapCity2itch-btn:hover {
-    background: rgb(209, 76, 83);
+    background: rgb(190, 25, 25);
     color: white;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid rgb(240, 110, 110);
     transform: scale(1.05);
-    text-shadow: 1px 1px 1px black;
+    box-shadow: 0 0 14px rgba(200, 40, 40, 0.6);
+    text-shadow: 2px 2px 4px black;
 }
 
 .LeapCity2moreinfo-btn {
@@ -602,10 +603,12 @@ footer{
 }
 
 .LeapCity2moreinfo-btn:hover {
-    background: rgb(209, 76, 83);
+    background: rgb(190, 25, 25);
     color: white;
+    border: 2px solid rgb(240, 110, 110);
     transform: scale(1.05);
-    text-shadow: 1px 1px 1px black;
+    box-shadow: 0 0 14px rgba(200, 40, 40, 0.6);
+    text-shadow: 2px 2px 4px black;
 }
 
 /* -------------------------------------Sentiment Project Logo----------------------------------------- */

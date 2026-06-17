@@ -76,7 +76,9 @@ h2 {
 }
 
 .arrow-btn-left:hover {
-    background: rgba(209, 76, 83, 0.35);
+    background: rgba(190, 25, 25, 0.5);
+    border: 2px solid rgb(240, 110, 110);
+    box-shadow: 0 0 14px rgba(200, 40, 40, 0.6);
     transform: translateX(-4px);
 }
 
