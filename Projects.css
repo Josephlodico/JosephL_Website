@@ -54,6 +54,39 @@
     border-radius: 10px;
 }
 
+/* Hamburger button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
 .navbar-btn {
     background: none;
     border: none;
@@ -973,30 +1006,10 @@ footer{
 /* MOBILE VERSION (iPhone 14 Pro Max & similar)*/
 @media (max-width: 480px) {
 
-    /* NAVBAR */
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 12px 20px;
-        gap: 50px;
-        text-align: center;
-    }
-
-    .navbar-right {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .nav-btn {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
-
     /* PAGE TITLES */
     h1,
     h2 {
-        font-size: 26px !important;
+        font-size: 22px !important;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -1012,6 +1025,9 @@ footer{
     .SRlogo-card,
     .MGSlogo-card,
     .IFTGlogo-card,
+    .LeapCity2Logo-card,
+    .SentimentLogo-card,
+    .ChessMateLogo-card,
     .GunGamelogo-card,
     .ShopSimlogo-card {
         width: 95%;
@@ -1019,16 +1035,17 @@ footer{
         padding: 20px;
     }
 
-    /* ALL PROJECT IMAGES */
-    .SRlogo,
+    /* ALL PROJECT MEDIA */
+    .SRVideo,
     .MGSVideo,
     .IFTGlogo,
-    .GunGamelogo,
+    .LC2Video,
+    .Sentimentlogo,
+    .ChessMatelogo,
+    .GGVideo,
     .ShopSimlogo {
         width: 100%;
-        height: auto;
-        max-height: 250px;
-        margin: 0;
+        height: 220px;
         object-fit: cover;
     }
 
@@ -1036,87 +1053,108 @@ footer{
     .SRlogo-text,
     .MGSlogo-text,
     .IFTGlogo-text,
+    .LeapCity2Logo-text,
+    .SentimentLogo-text,
+    .ChessMateLogo-text,
     .GunGamelogo-text,
     .ShopSimlogo-text {
-        font-size: 16px;
-        margin-bottom: 25px;
+        font-size: 15px;
+        margin-bottom: 20px;
         line-height: 1.4;
     }
 
-    /* BUTTONS */
-    .SRitch-btn,
-    .SRmoreinfo-btn,
-    .MGSitch-btn,
-    .MGSmoreinfo-btn,
-    .IFTGitch-btn,
-    .IFTGmoreinfo-btn,
-    .GunGame-btn,
-    .GunGamemoreinfo-btn,
-    .ShopSim-btn,
-    .ShopSimmoreinfo-btn {
+    /* ALL BUTTONS — stack them, remove forced margins */
+    .SRitch-btn, .SRmoreinfo-btn,
+    .MGSitch-btn, .MGSmoreinfo-btn,
+    .IFTGitch-btn, .IFTGmoreinfo-btn,
+    .LeapCity2itch-btn, .LeapCity2moreinfo-btn,
+    .Sentimentitch-btn, .Sentimentmoreinfo-btn,
+    .ChessMateitch-btn, .ChessMatemoreinfo-btn,
+    .GunGame-btn, .GunGamemoreinfo-btn,
+    .ShopSim-btn, .ShopSimmoreinfo-btn {
+        display: block;
+        width: fit-content;
         padding: 8px 18px;
         font-size: 14px;
-        margin: 5px auto;
-        display: block;
-        text-align: center;
-    }
-
-    /* Removes Forced Left margins */
-    .SRmoreinfo-btn,
-    .MGSmoreinfo-btn,
-    .IFTGmoreinfo-btn,
-    .GunGamemoreinfo-btn,
-    .ShopSimmoreinfo-btn {
+        margin: 6px auto;
         margin-left: 0;
+        text-align: center;
     }
 }
 
-/* -----------------------------------(Desktop) Screen Responsive --------------------------------------------- */
+/* -----------------------------------(≤900px) Hamburger nav + responsive cards --------------------------------------------- */
 @media (max-width: 900px) {
 
-    /* NAVBAR */
+    /* NAVBAR — compact row with hamburger */
     .navbar {
-        flex-direction: column;
-        padding: 15px 20px;
-        gap: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: center;
-    }
-    .arrow-btn-left{
-        top: -5px;
-        margin-right: 100px;
-    }
-    .navbar-left {
-        width: 100%;
-        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        gap: 8px;
     }
 
-    .navbar-right {
-        width: 100%;
+    .navbar-left {
+        flex: 1;
+    }
+
+    /* Hide "Go Back to Portfolio Page" label, keep just the arrow */
+    .arrow-btn-left span:not(.flipped) {
+        display: none;
+    }
+
+    .arrow-btn-left {
+        top: 10px;
+        font-size: 20px;
+    }
+
+    /* Show hamburger */
+    .hamburger {
         display: flex;
+        flex-shrink: 0;
+    }
+
+    /* Nav links become a dropdown below the navbar */
+    .navbar-right {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(135deg, #444349, #1e0f3f);
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        padding: 14px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        box-sizing: border-box;
     }
 
+    .navbar-right.open {
+        display: flex;
+    }
+
+    /* Socials stay inline on the same row */
     .navbar-socials {
+        display: flex;
+        flex-shrink: 0;
         margin-right: 0;
-        justify-content: center;
-        width: 100%;
+        gap: 12px;
     }
 
     .navbar-socials img {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
 
     .navbar-spacer {
-        height: 180px;
+        height: 65px;
     }
 
     section {
-        scroll-margin-top: 180px;
+        scroll-margin-top: 65px;
     }
 
     /* PROJECT SECTION */
@@ -1125,25 +1163,36 @@ footer{
         padding: 15px;
     }
 
-    /* Reduce card width for medium screens */
+    /* All cards responsive width */
     .SRlogo-card,
     .MGSlogo-card,
     .IFTGlogo-card,
+    .LeapCity2Logo-card,
+    .SentimentLogo-card,
+    .ChessMateLogo-card,
     .GunGamelogo-card,
-    .ShopSimlogo-card,
-    .LeapCity2Logo-card {
-        width: 80%;
+    .ShopSimlogo-card {
+        width: min(500px, 90vw);
         height: auto;
     }
 
-    /* Resize videos */
+    /* All media responsive height */
     .SRVideo,
     .MGSVideo,
     .IFTGlogo,
-    .GGVideo,
     .LC2Video,
+    .Sentimentlogo,
+    .ChessMatelogo,
+    .GGVideo,
     .ShopSimlogo {
         height: 280px;
+    }
+
+    /* Fix "More Info" button left margins */
+    .SRmoreinfo-btn, .MGSmoreinfo-btn, .IFTGmoreinfo-btn,
+    .LeapCity2moreinfo-btn, .Sentimentmoreinfo-btn, .ChessMatemoreinfo-btn,
+    .GunGamemoreinfo-btn, .ShopSimmoreinfo-btn {
+        margin-left: 0;
     }
 }
 
@@ -1170,68 +1219,61 @@ footer{
         gap: 20px;
     }
 
-    /* Cards smaller */
+    /* All cards */
     .SRlogo-card,
     .MGSlogo-card,
     .IFTGlogo-card,
+    .LeapCity2Logo-card,
+    .SentimentLogo-card,
+    .ChessMateLogo-card,
     .GunGamelogo-card,
-    .ShopSimlogo-card,
-    .LeapCity2Logo-card {
+    .ShopSimlogo-card {
         width: 90%;
+        height: auto;
     }
 
-    /* Images smaller */
+    /* All media */
     .SRVideo,
     .MGSVideo,
     .IFTGlogo,
-    .GGVideo,
     .LC2Video,
+    .Sentimentlogo,
+    .ChessMatelogo,
+    .GGVideo,
     .ShopSimlogo {
         height: 240px;
     }
 
-    /* Text smaller */
+    /* All text */
     .SRlogo-text,
     .MGSlogo-text,
     .IFTGlogo-text,
+    .LeapCity2Logo-text,
+    .SentimentLogo-text,
+    .ChessMateLogo-text,
     .GunGamelogo-text,
     .ShopSimlogo-text {
         font-size: 17px;
         text-align: left;
     }
 
-    /* Center buttons */
-    .SRitch-btn,
-    .MGSitch-btn,
-    .IFTGitch-btn,
-    .GunGame-btn,
-    .ShopSim-btn,
-    .LeapCity2itch-btn {
-        display: block;
-        width: fit-content;
-        margin: 10px auto;
+    /* All buttons */
+    .SRitch-btn, .SRmoreinfo-btn,
+    .MGSitch-btn, .MGSmoreinfo-btn,
+    .IFTGitch-btn, .IFTGmoreinfo-btn,
+    .LeapCity2itch-btn, .LeapCity2moreinfo-btn,
+    .Sentimentitch-btn, .Sentimentmoreinfo-btn,
+    .ChessMateitch-btn, .ChessMatemoreinfo-btn,
+    .GunGame-btn, .GunGamemoreinfo-btn,
+    .ShopSim-btn, .ShopSimmoreinfo-btn {
+        display: inline-block;
+        margin: 8px auto;
+        text-align: center;
     }
 
-    .SRmoreinfo-btn,
-    .MGSmoreinfo-btn,
-    .IFTGmoreinfo-btn,
-    .GunGamemoreinfo-btn,
-    .ShopSimmoreinfo-btn,
-    .LeapCity2moreinfo-btn {
-        margin-left: 0 ;
-        margin-top: 5px;
-    }
-    /* This Fixes The buttons inside my Cards from looking weird */
-    .SRitch-btn,.SRmoreinfo-btn,.MGSitch-btn,.MGSmoreinfo-btn,.IFTGitch-btn,.IFTGmoreinfo-btn,
-    .LeapCity2itch-btn,.LeapCity2moreinfo-btn,.GunGame-btn,.GunGamemoreinfo-btn,.ShopSim-btn,
-    .ShopSimmoreinfo-btn {
-        display: inline-block;
-        margin: 10px auto; /* centers automatically */
-        text-align: left;
-    }
-    
-    .SRmoreinfo-btn,.MGSmoreinfo-btn,.IFTGmoreinfo-btn,.GunGamemoreinfo-btn,.ShopSimmoreinfo-btn,
-    .LeapCity2moreinfo-btn {
-        margin-left: 0; 
+    .SRmoreinfo-btn, .MGSmoreinfo-btn, .IFTGmoreinfo-btn,
+    .LeapCity2moreinfo-btn, .Sentimentmoreinfo-btn, .ChessMatemoreinfo-btn,
+    .GunGamemoreinfo-btn, .ShopSimmoreinfo-btn {
+        margin-left: 0;
     }
 }

@@ -110,6 +110,7 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     background: linear-gradient(135deg, #444349, #1e0f3f);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     display: flex;
@@ -120,7 +121,6 @@ footer{
     z-index: 1000;
     opacity: 1;
     visibility: visible;
-    /* ensures navbar stays on top of everything */
 }
 
 .navbar-socials {
@@ -191,6 +191,39 @@ footer{
     background: rgb(79, 127, 201);
     color: white;
     border-radius: 10px;
+}
+
+/* Hamburger button — hidden on desktop, shown on mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
 }
 
 p {
@@ -313,7 +346,7 @@ p {
 /* Sentiment Card Behaviour Game Jam Montreal 2026 */
 .Sentiment-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -337,7 +370,7 @@ p {
 /* ChessMate Card */
 .CM-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -362,7 +395,7 @@ p {
 /* SpeedRacers Card */
 .SR-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -386,7 +419,7 @@ p {
 /* LeapCity2 Card */
 .LC2-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -410,7 +443,7 @@ p {
 /* MyGlidingSim Card */
 .MGS-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -435,7 +468,7 @@ p {
 /* InfiniteTrigger Card */
 .IFTG-card{
     position: relative;
-    width: 500px;
+    width: min(500px, 90vw);
     overflow: hidden;
     border-radius: 40px;
     border: 4px solid #1e0f3f;
@@ -862,14 +895,18 @@ section {
 
     /* EDUCATION SECTION */
 
-    .Lasalle-card {
+    .Lasalle-card,
+    .Addatech-card {
         padding: 15px;
-        margin-left: 5px;
+        margin-left: 0;
+        width: 90%;
+        max-width: 420px;
     }
 
-    .HighSchool-card {
-        padding: 10px;
-        margin-left: 5px;
+    .Lasalle-card h1,
+    .Addatech-card h1 {
+        font-size: 18px;
+        word-break: break-word;
     }
 
     .Education-section {
@@ -899,6 +936,12 @@ section {
     .experience-box {
         font-size: 14px;
         padding: 10px;
+    }
+
+    /* Reduce large section divider gaps on mobile */
+    .section-divider,
+    .top-hr {
+        margin: 50px auto 10px auto;
     }
 
     /* CONTACT FORM SECTION*/
@@ -963,7 +1006,7 @@ section {
     }
 
     .Lasalle-card,
-    .HighSchool-card {
+    .Addatech-card {
         margin-left: 0;
         width: 90%;
         max-width: 500px;
@@ -1015,36 +1058,72 @@ section {
 @media (max-width: 900px) {
 
     .navbar {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 15px 0;
-        gap: 12px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        gap: 8px;
+    }
+
+    .navbar-left {
+        flex: 1;
     }
 
     .site-title {
-        width: 100%;
+        font-size: clamp(13px, 3.5vw, 18px);
         margin: 0;
-        text-align: center;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    /* Nav links become a dropdown below the navbar */
     .navbar-right {
-        order: 2;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
+        background: linear-gradient(135deg, #444349, #1e0f3f);
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+        padding: 14px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        box-sizing: border-box;
     }
 
+    .navbar-right.open {
+        display: flex;
+    }
+
+    /* Socials stay inline on the same row — no second row */
     .navbar-socials {
-        order: 3;
-        width: 100%;
-        justify-content: center;
+        display: flex;
+        flex-shrink: 0;
+        margin-right: 0;
+        gap: 12px;
+    }
+
+    .navbar-socials img {
+        width: 26px;
+        height: 26px;
     }
 
     .navbar-spacer {
-        height: 190px;
+        height: 65px;
     }
 
     section {
-        scroll-margin-top: 190px;
+        scroll-margin-top: 65px;
     }
 }
