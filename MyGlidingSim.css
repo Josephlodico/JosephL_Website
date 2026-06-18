@@ -73,14 +73,18 @@
       font-size: 20px;
       font-weight: bold;
       text-decoration: none;
-      transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease;
-      text-shadow: 1px 1px 1px white;
+      z-index: 1200;
+      transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease, border 0.2s ease;
+      text-shadow: 1px 1px 1px grey;
       padding: 5px 10px;
       border-radius: 6px;
+      border: 2px solid white;
   }
 
   .arrow-btn-left:hover {
-      background: rgba(210, 210, 210, 0.3);
+      background: white;
+      color: grey;
+      border: 2px solid grey;
       transform: translateX(-4px);
   }
 
@@ -92,6 +96,10 @@
   .arrow-btn-left span {
       color: white;
       font-weight: bold;
+  }
+
+  .arrow-btn-left:hover span {
+      color: grey;
   }
 
   .section-divider,
