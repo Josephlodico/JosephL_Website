@@ -418,100 +418,7 @@
       font-size: 30px;
   }
   
-/* ---------------------------------- MOBILE + SMALL WINDOW (600px) ------------------------------- */
-@media (max-width: 600px) {
-
-    .navbar {
-        flex-direction: column;
-        padding: 25px 15px;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .navbar-right {
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .nav-btn {
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-
-    /* Back arrow adjusts */
-    .arrow-btn-left {
-        top: 10px;
-        left: 10px;
-        font-size: 18px;
-    }
-
-    /* CONTENT STACKS CLEANLY */
-    .MGSVid-section,
-    .MGSLogo-section,
-    .GSLevel1-section,
-    .GSLevel2-section,
-    .Checkpoint-section {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    /* CARDS */
-    .MGSInfo-card,
-    .MGSLogo-card,
-    .MGSLvl1Design-card,
-    .MGSLvl2Design-card,
-    .MGSCheckpoint-card {
-        width: 90%;
-        padding: 18px;
-        margin-bottom: 25px;
-    }
-
-    /* IMAGES */
-    .MGSvideo-video,
-    .MGSLogo-image,
-    .Level1-image,
-    .Level2-image,
-    .MGSCheckpoint-image {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-width: 2px;
-         margin-bottom: 25px;
-    }
-
-    /* TEXT RESIZING */
-    .MGSGame-description,
-    .MGSLogo-description,
-    .GSLevel1-description,
-    .GSLevel2-description,
-    .MGSCheckpoint-description {
-        font-size: 16px;
-        line-height: 1.4;
-        padding: 0 10px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .MGSGame-description h2,
-    .MGSLogo-description h2,
-    .GSLevel1-description h2,
-    .GSLevel2-description h2,
-    .MGSCheckpoint-description h2 {
-        font-size: 22px;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    /* DIVIDER spacing */
-    .section-divider,
-    .top-hr {
-        margin: 35px auto;
-    }
-}
-
-  /* --------------------------- DESKTOP RESPONSIVE  (1200px) ------------------------- */
+/* --------------------------- DESKTOP RESPONSIVE (1200px) ------------------------- */
 @media (max-width: 1200px) {
 
     /* NAVBAR fixes */
@@ -528,10 +435,10 @@
         justify-content: center;
         gap: 12px;
     }
+
     .navbar-spacer {
-      height: 180px;
-      /* same height as navbar to prevent content overlap */
-  }
+        height: 150px;
+    }
 
     .arrow-btn-left {
         top: 15px;
@@ -562,7 +469,7 @@
     .MGSCheckpoint-card {
         width: 95%;
         max-width: 950px;
-        margin: 0 auto 40px -10px;
+        margin: 0 auto 40px auto;
     }
 
     /* Images resize */
@@ -575,6 +482,7 @@
         height: auto;
         max-height: 500px;
         object-fit: cover;
+        margin-left: 0;
     }
 
     /* Text resizes smoothly */
@@ -594,5 +502,105 @@
     .GSLevel2-description h2,
     .MGSCheckpoint-description h2 {
         font-size: 26px;
+    }
+}
+
+/* ---------------------------------- MOBILE + SMALL WINDOW (600px) ------------------------------- */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 25px 15px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-btn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .navbar-spacer {
+        height: 150px;
+    }
+
+    /* Back arrow adjusts */
+    .arrow-btn-left {
+        top: 10px;
+        left: 10px;
+        font-size: 18px;
+    }
+
+    /* CONTENT STACKS CLEANLY */
+    .MGSVid-section,
+    .MGSLogo-section,
+    .GSLevel1-section,
+    .GSLevel2-section,
+    .Checkpoint-section {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 95%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    /* CARDS */
+    .MGSInfo-card,
+    .MGSLogo-card,
+    .MGSLvl1Design-card,
+    .MGSLvl2Design-card,
+    .MGSCheckpoint-card {
+        width: 90%;
+        padding: 18px;
+        margin-bottom: 25px;
+    }
+
+    /* IMAGES */
+    .MGSvideo-video,
+    .MGSLogo-image,
+    .Level1-image,
+    .Level2-image,
+    .MGSCheckpoint-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-width: 2px;
+        margin-bottom: 25px;
+        margin-left: 0;
+    }
+
+    /* TEXT RESIZING */
+    .MGSGame-description,
+    .MGSLogo-description,
+    .GSLevel1-description,
+    .GSLevel2-description,
+    .MGSCheckpoint-description {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 10px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .MGSGame-description h2,
+    .MGSLogo-description h2,
+    .GSLevel1-description h2,
+    .GSLevel2-description h2,
+    .MGSCheckpoint-description h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* DIVIDER spacing */
+    .section-divider,
+    .top-hr {
+        margin: 35px auto;
     }
 }

@@ -413,7 +413,7 @@ footer{
     .IFTGShopSys-card {
         width: 90%;
         max-width: 950px;
-        margin: 0 auto 40px -10px;
+        margin: 0 auto 40px auto;
         padding: 20px;
     }
 
@@ -542,11 +542,15 @@ footer{
         padding: 25px 15px;
         gap: 10px;
     }
-    
+
     .navbar-right {
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
+    }
+
+    .navbar-spacer {
+        height: 80px;
     }
 
     .arrow-btn-left {

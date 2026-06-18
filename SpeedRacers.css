@@ -455,9 +455,10 @@ margin-bottom: 40px; /* Some Spacing*/
         align-items: center;
         justify-content: center;
         width: 100%;
+        max-width: 95%;
         gap: 25px;
         padding: 0 20px;
-        margin: 0 -20px;
+        margin: 0 auto;
     }
 
     /* GENERIC CARD RESIZE */
@@ -484,6 +485,7 @@ margin-bottom: 40px; /* Some Spacing*/
         height: auto;
         object-fit: cover;
         border-radius: 10px;
+        margin-left: 0;
     }
 
     /* TEXT */
