@@ -69,17 +69,19 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease;
-    text-shadow: 5px 5px 5px black;
+    z-index: 1200;
+    transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease, border 0.2s ease;
+    text-shadow: 2px 2px 2px black;
     padding: 5px 10px;
     border-radius: 6px;
+    border: 2px solid white;
 }
 
 .arrow-btn-left:hover {
     background: black;
     transform: translateX(-4px);
     color: rgb(71, 24, 24);
-    border: solid white;
+    border: 2px solid white;
     text-shadow: 5px 5px 5px black;
 }
 
@@ -89,9 +91,8 @@ h2 {
 }
 
 .arrow-btn-left span {
-    color:white;
+    color: white;
     font-weight: bold;
-    text-shadow: 5px 5px 5px black;
 }
 
 .section-divider,
