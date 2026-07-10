@@ -10,7 +10,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 | Page | Description |
 |------|-------------|
 | `index.html` | Main portfolio — bio, featured projects, education, experience & contact |
-| `MyProjects.html` | Full project gallery (game + coding projects) |
+| `Projects.html` | Full project gallery (game + coding projects) |
 | `SpeedRacers.html` | Kart racing game detail page |
 | `LeapCity2.html` | Parkour platformer detail page |
 | `InfiniteTrigger.html` | Zombie wave shooter detail page |
@@ -91,7 +91,7 @@ Then visit `http://localhost:5501` in your browser.
 ```
 JosephL_Website/
 ├── index.html                  # Main portfolio page
-├── MyProjects.html             # All projects gallery
+├── Projects.html                # All projects gallery
 ├── SpeedRacers.html/.css       # SpeedRacers detail
 ├── LeapCity2.html/.css         # LeapCity2 detail
 ├── InfiniteTrigger.html/.css   # InfiniteTrigger detail
