@@ -30,6 +30,26 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 
 ---
 
+## 🎓 Education & Experience
+
+| Institution | Program / Role | Duration |
+|---|---|---|
+| **Collège LaSalle** — Montreal, QC | Diploma of College Studies (DCS) in Video Game Programming | Aug 2023 – Aug 2026 |
+| **ADDA Tech Systems Inc.** — Laval, QC | Software Development Intern | May 2026 – Present |
+
+---
+
+## 🧠 Skills
+
+| Category | Skills |
+|---|---|
+| **Languages** | HTML, CSS, JavaScript, C#, C++, Java |
+| **Frameworks** | Blueprint (Unreal Engine), Unity, Unreal Engine 5, Blender, Autodesk Maya |
+| **Tools** | Perforce, Git, Git Bash, Azure DevOps, Rider, VS Code, Visual Studio, Trello |
+| **Spoken Languages** | English, French |
+
+---
+
 ## 🚀 Projects Showcased
 
 ### 🎮 Game Projects
@@ -106,7 +126,9 @@ JosephL_Website/
 ├── index.js                    # Main page scroll logic
 ├── CV/                         # Downloadable CV PDF
 ├── images/                     # Game logos, screenshots, favicons
-└── videos/                     # Gameplay footage
+├── videos/                     # Gameplay footage
+├── robots.txt                  # Search engine crawl rules
+└── sitemap.xml                 # Sitemap for SEO
 ```
 
 ---
@@ -122,6 +144,8 @@ JosephL_Website/
 - **Inline video autoplay** — all videos use correct `playsinline` for iOS Safari support
 - **Contact form** via FormSubmit
 - **Downloadable CV**
+- **SEO-friendly** — Open Graph / Twitter card meta tags, `robots.txt`, and `sitemap.xml`
+- **Image/style preloading** for faster first paint (navbar logos, background, CSS)
 
 ---
 
@@ -141,7 +165,7 @@ Currently completing a **Summer 2026 internship at Adda Tech Systems Inc.**, gai
 
 ## 📬 Contact
 
-Fill out the contact form on the portfolio page, or reach out directly via LinkedIn.
+Fill out the contact form on the portfolio page, email [josephl2020@hotmail.com](mailto:josephl2020@hotmail.com), or reach out directly via LinkedIn.
 
 ---
 
