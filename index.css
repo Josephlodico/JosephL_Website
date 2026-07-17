@@ -513,7 +513,7 @@ p {
     display: flex;
 }
 
-.Lasalle-card {
+.LaSalle-card {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -531,24 +531,24 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.Lasalle-card h1 {
+.LaSalle-card h1 {
     color: white;
     text-shadow: 10px 10px 10px black;
 }
 
-.Lasalle-card h4,h3 {
+.LaSalle-card h4,h3 {
     font-weight: bold;
     font-size: auto;
     color: white;
     text-shadow: 10px 10px 10px black;
 }
 
-.Lasalle-card p {
+.LaSalle-card p {
     align-items: left;
     text-shadow: 10px 10px 10px black;
     text-align: left;
 }
-.Lasalle-card:hover {
+.LaSalle-card:hover {
     transform: scale(1.10);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
