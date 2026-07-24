@@ -408,8 +408,8 @@ margin-bottom: 40px; /* Some Spacing*/
     font-size: 30px;
 }
 
-/* ---------------------------------- DESKTOP + TABLET RESPONSIVE (900px)----------------------------- */
-@media (max-width: 900px) {
+/* ---------------------------------- LAPTOP + TABLET RESPONSIVE (1440px)----------------------------- */
+@media (max-width: 1440px) {
 
     /* NAVBAR FIX */
     .navbar {

@@ -977,6 +977,38 @@ section {
 
 /* ---------------------------(LapTop) SCREEN Responsiveness-------------------------------------------- */
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .header-container {
+        padding: 0 30px;
+    }
+
+    .profile-card {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .profile-pic {
+        margin-left: 0;
+    }
+
+    .Education-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .LaSalle-card,
+    .Addatech-card {
+        margin-left: 0;
+    }
+
+    .snapchat-avatar {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
 /* ---------------------------(Other) SCREEN Responsiveness--------------------------------------------- */
 
 @media (max-width: 1024px) {

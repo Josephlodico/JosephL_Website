@@ -240,8 +240,8 @@ margin-bottom: 40px; /* Some Spacing*/
     font-size: 30px;
 }
 
-/* ---------------------------------- DESKTOP RESPONSIVE (1200px) ---------------------------------- */
-@media (max-width: 1200px) {
+/* ---------------------------------- LAPTOP RESPONSIVE (1440px) ---------------------------------- */
+@media (max-width: 1440px) {
 
     .navbar {
         flex-direction: column;

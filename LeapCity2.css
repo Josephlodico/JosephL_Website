@@ -381,8 +381,8 @@ margin-bottom: 40px; /* Some Spacing*/
     padding: 0 auto;
 }
 
-/* ------------------------------- DESKTOP RESPONSIVE (1200px) ----------------------- */
-@media (max-width: 1200px) {
+/* ------------------------------- LAPTOP RESPONSIVE (1440px) ----------------------- */
+@media (max-width: 1440px) {
 
     /* NAVBAR */
     .navbar {

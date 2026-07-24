@@ -232,8 +232,8 @@ footer{
     font-size: 28px;
 }
 
-/* ---------- DESKTOP → TABLET RESPONSIVE FIX (1200px) ---------- */
-@media (max-width: 1200px) {
+/* ---------- LAPTOP → TABLET RESPONSIVE FIX (1440px) ---------- */
+@media (max-width: 1440px) {
 
     /* NAVBAR */
     .navbar {
