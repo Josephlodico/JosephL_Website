@@ -1,4 +1,3 @@
-
 # 🎮 Joseph Lodico — Portfolio Website
 
 A personal portfolio and game dev showcase built with vanilla HTML, CSS, and JavaScript. Features a home page, project gallery, and individual detail pages for each game and coding project.
@@ -19,6 +18,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 | `Sentiment.html` | Horror game detail page |
 | `GUNGAME.html` | C# console game detail page |
 | `ShopSim.html` | C++ shop simulator detail page |
+| `ProfileManager.html` | C# .NET console profile manager detail page |
 
 ---
 
@@ -35,7 +35,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 | Institution | Program / Role | Duration |
 |---|---|---|
 | **Collège LaSalle** — Montreal, QC | Diploma of College Studies (DCS) in Video Game Programming | Aug 2023 – Aug 2026 |
-| **ADDA Tech Systems Inc.** — Laval, QC | Software Development Intern | May 2026 – Present |
+| **ADDA Tech Systems Inc.** — Laval, QC | Software Development Intern | May 11, 2026 – Aug 19, 2026 |
 
 ---
 
@@ -69,6 +69,7 @@ A personal portfolio and game dev showcase built with vanilla HTML, CSS, and Jav
 |---------|----------|------|------|------|
 | **GUNGAME** | C# (Visual Studio 2022) | Programmer | 2 | 2024 |
 | **ShopSimulator** | C++ (Visual Studio 2022) | Minigame Programmer | 4 | 2025 |
+| **ProfileManager** | C# .NET 9 (Visual Studio 2022) | Programmer | Solo | 2026 |
 
 ---
 
@@ -120,6 +121,7 @@ JosephL_Website/
 ├── Sentiment.html/.css         # Sentiment detail
 ├── GUNGAME.html/.css           # GUNGAME detail
 ├── ShopSim.html/.css           # ShopSimulator detail
+├── ProfileManager.html/.css    # ProfileManager detail
 ├── Projects.css                # Shared projects page styles
 ├── Projects.js                 # Scroll + active nav logic
 ├── index.css                   # Main page styles
@@ -151,7 +153,7 @@ JosephL_Website/
 
 ## 💼 Experience
 
-Currently completing a **Summer 2026 internship at Adda Tech Systems Inc.**, gaining professional development experience and growing technical and collaborative skills.
+Completed a **Summer 2026 internship at Adda Tech Systems Inc.**, gaining professional development experience and growing technical and collaborative skills.
 
 ---
 
