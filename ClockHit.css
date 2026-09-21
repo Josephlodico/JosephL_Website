@@ -1,0 +1,238 @@
+/* --------------------------------------Main Page Style--------------------------------------------------------- */
+/* Navigation Bar for better Navigation of pages */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient( 135deg,rgb(214, 212, 211), rgb(66, 10, 10));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1000;
+    /* ensures navbar stays on top of everything */
+}
+
+.navbar-right {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-spacer {
+    height: 80px;
+    /* same height as navbar to prevent content overlap */
+}
+
+.arrow-btn:hover {
+    background: silver;
+    transform: translateX(-5px);
+}
+
+span {
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient( 135deg,rgb(214, 212, 211), rgb(66, 10, 10));
+    background-size: cover;
+    display: block;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.arrow-btn-left {
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1200;
+    transition: color 0.3s ease, transform 0.2s ease, background 0.2s ease, border 0.2s ease;
+    text-shadow: 2px 2px 2px black;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+.arrow-btn-left:hover {
+    background: rgb(46, 14, 14);
+    color: white;
+    border: 2px solid white;
+    transform: translateX(-4px);
+}
+
+.flipped {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+.arrow-btn-left span {
+    color: white;
+    font-weight: bold;
+}
+
+.section-divider,
+.top-hr {
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    margin: 60px auto 40px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+footer{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+/* ------------Clock Hit Description, Project Info Section, and (video) Style and layout--------------------------------------------------------- */
+.ClockHitVidDesign-card {
+    flex: 1;
+    max-width: 50%;
+    background: linear-gradient( 135deg,rgb(214, 212, 211), rgb(172, 140, 140));
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom:70px;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.ClockHitVid-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/* Video on Top */
+.CM-video {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    border: 2px solid rgb(145, 26, 26);
+    box-shadow: 0 0 10px black;
+}
+.ClockHitvideo-box{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 40px; /* Some Spacing*/
+}
+/* Video on Top */
+/* ------------------ */
+.ClockHitGame-description {
+    flex: 1;
+    color: rgb(46, 14, 14);
+    font-size: 25px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgb(145, 26, 26);
+}
+
+.ClockHitGame-description h2 {
+    color: rgb(145, 26, 26);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgb(145, 26, 26);
+    font-size: 30px;
+}
+.ClockHitproject-info-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    color: rgb(46, 14, 14);
+    font-size: 22px;
+    line-height: 1.6;
+  }
+  .ClockHitproject-info-list li{
+    margin-bottom: 5px;
+  }
+  .ClockHitproject-info-list strong{
+    color: rgb(145, 26, 26);
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgb(145, 26, 26);
+  }
+  /*---------------------Clock Hit Logo Info--------------------------*/
+.CHLogo-card {
+    display: flex;
+    flex-direction: flex;
+    text-align: left;
+    align-items: left;
+    border: 2px solid black;
+    background: rgb(214, 212, 211);
+    border-radius: 20px;
+    padding: 25px;
+    width: 950px;
+    height: auto;
+    max-width: 1000px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.CHLogo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1800px;
+    margin-left: 10px;
+}
+
+.CHLogo-image {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px black;
+}
+
+.CHLogo-description {
+    flex: 1;
+    margin-bottom: 200px;
+    color: rgb(46, 14, 14);
+    font-size: 24px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgb(46, 14, 14);
+}
+
+.CHLogo-description h2 {
+    color: rgb(46, 14, 14);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgb(46, 14, 14);
+    font-size: 30px;
+}
