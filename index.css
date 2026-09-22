@@ -343,6 +343,30 @@ p {
     font-size: 15px;
     opacity: 1;
 }
+/* Clock Hit Polygames Game Jam 26e Edition 2026 */
+.ClockHit-card{
+    position: relative;
+    width: min(500px, 90vw);
+    overflow: hidden;
+    border-radius: 40px;
+    border: 4px solid #1e0f3f;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.ClockHit-card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ClockHit-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+.ClockHit-card:hover .overlay{
+    transform: translateY(0);
+}
 /* Sentiment Card Behaviour Game Jam Montreal 2026 */
 .Sentiment-card{
     position: relative;
